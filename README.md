@@ -1,8 +1,7 @@
 ## rx-content
 book, magazines, poetry and other content type samples in various markup formats (TEI, HTML, other)
 
-While the markup used in each of the examples below the end goal is the
-same that is for each type of content we would like to:
+the end goal is the same no matter the format:
 
 - extract the title, subtitle, author and any other meta. NOTE: while the
     list of meta we want is the same their markup is different in each
@@ -15,6 +14,7 @@ same that is for each type of content we would like to:
 - target fragments of content that can be sold: in the case of books
     these would be chapters, in the case of magazines it would be
     articles
+- be able to cherry pick elements from within a book or magazine e.g. grab the title and description of a book or magazine    
 
 ---
 
@@ -59,10 +59,38 @@ generate (using our "generator tools") the following formats:
 - cross platform apps (using ionic), although we have deprecated those
 
 
-The sample file is mostly self explanatory (we will provideclarifications where needed)
+The sample file is mostly self explanatory (we will provide clarifications where needed)
 
 it consists of the:
 - head element cointaining all the book meta
 - body which contains the content of the book
 - there is abundant use of the `@role` attibute where we specify what
     type of content is used e.g `role="chapter | section | subsection"`
+
+we've provided two samples:
+- a full book example `204-python` which as you've already guessed is a
+    book about python language
+- a partial law book example `sakkoulas-1-sinaniotis-arhes-endikon-meson` (we will create 1-2 full law book examples
+    for the purposes of the demo)
+
+
+### /books-tei-xml/tom-sawyer
+This is our prototype book which contains inline semantics using the TEI
+XML guidelines
+
+- `tom.book.xml` is the main book content
+- `*.sch` files are schematron files: schematron a is useful and practical XML technology which in our context is used to do things like enforce XML quality assurance/control or impose business rules on their XML (this can of course be applied in the XHTM5 examples, this are just some test files created while trying to test schematrons capabilities)
+- `*.css` files, these are used to style the content in oXygen XML
+    Editor's author view, not really created for the browser, you may
+    have a look at them but they're of little use
+
+---
+
+### Tom Prototype site (separate repo)
+This is just an old demo we created many years ago, this was not
+automatically generated, rather TEI XML was converted to a temporary
+html format by hand only for the purposes of a demo, as such this is
+just a visual example and nothing more
+
+you can run it by going to the main directory and running `$ python -m
+SimpleHTTPServer 8000` or an equivalent of your choice
