@@ -1,0 +1,206 @@
+/* CSS STARTS HERE */
+
+/* dialogue */
+
+said {
+  background-color: pink;
+}
+
+/* page breaks */
+
+pb {
+  display: inline;
+  background-color: red;
+}
+
+pb::before, seg::before {
+   padding-left: .2em;
+   padding-right: .2em;
+}
+
+pb {
+  display: inline;
+  background-color: yellow;
+}
+
+
+/*
+pb::before { 
+    content: "[pg]: ";
+} 
+*/  
+ 
+pb:after {
+  content: "[pg: " attr(n) "] "; 
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+
+/* themes */
+
+orig[ana="idiom"]{
+  color: red;
+}
+
+p {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+
+/* milestones */
+
+milestone {
+  display: block;
+  background-color: #90C4FF;
+  content:attr(n); 
+}
+
+milestone::before {
+  content: "Scene Title: "
+} 
+
+note[type="mDate"] {
+  background-color: #90C4FF;
+}
+
+note[type="mDate"]::before {
+  content: "[Scene date]: "
+}
+
+note[type="mSummary"] {
+  background-color: #90C4FF;
+}
+
+note[type="mSummary"]::before {
+  content: "[Scene summary]: "
+}
+
+/* anchors */
+
+anchor {
+  display: block;
+  background-color: #e8f5ff;
+  content:attr(n); 
+}
+
+anchor::before {
+  content: "[Anchor Title]: "
+}
+
+note[type="anDate"] {
+  background-color: #e8f5ff;
+}
+
+note[type="anDate"]::before {
+  content: "[Anchor date]: "
+}
+
+/* figures */
+
+figure {
+
+  background-color: #f5faff;
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-width: 1px;
+  color: maroon;
+
+}
+
+figure > head::before {
+  content:"[Original caption]: " ;
+}
+
+figDesc::before {
+  content: "[Custom description]: "
+}
+
+
+graphic {
+  max-width: 30%;
+  background-color: brown;
+  display: block;
+  margin: 0 auto;
+}
+
+/* glossary */
+
+reg {
+  font-style: normal;
+  font-size: 0.6em;
+  display: none; /* TEMP !!!!! */
+}
+
+
+reg::before {
+  font-style: normal;
+  content:"(";
+}
+
+reg::after{
+  content: ")";
+font-style: normal;
+}
+
+/* SEG * for colors see redacted.css/
+/*TEMP: seg switch to `inline` after proofing*/
+seg {
+    
+   display: inline;
+   /* background-color: yellow;  yellow/brown */
+   -oxy-foldable:true;
+}
+
+
+
+
+ 
+/* notes */ 
+note {
+  background-color: #859900; /* green */
+  -oxy-foldable:true;
+  display:block;
+}
+
+
+
+/* Typography */
+
+
+text {
+  font-family: "Georgia", serif;
+}
+
+
+
+/*Line Groups */
+
+/* poem note you have to add css rule about stanza */
+
+lg {
+  margin-left: 2em;
+  color: maroon; 
+}
+
+
+/* alignment */
+
+l[rend="center"] {
+  text-align: center;
+} /* not working */
+
+
+
+hi[rend="sup"] {
+  color:red;
+}
+
+ab[type="caption"] {
+  background-color: yellow;
+}
