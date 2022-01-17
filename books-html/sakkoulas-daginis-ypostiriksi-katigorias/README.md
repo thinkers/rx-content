@@ -61,6 +61,7 @@
 - add IDs to all fragment elements
 - remove ` class="Basic-Paragraph"`
 - remove  `_idGenColorInherit`
+- add uuids to all block level body children
 
 
 ## Automation
