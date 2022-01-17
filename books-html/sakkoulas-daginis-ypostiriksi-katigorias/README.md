@@ -6,12 +6,13 @@
 - __Corner Case__: Chapter 4 from `4.3` onwards book is missing `secDepth-02` but 03, 04 present, had to renumber them:  `secDepth-03` →  `secDepth-02`, `secDepth-04` →  `secDepth-03`
 
 ## Conversion Pendings
-- add to template doc
-- add meta
-- notify Hannes
+- [-] review additional meta that we may require such as UUIDs, ids for all block elements
+- [-] discuss,review update in attributes according to ARIA roles [see](https://www.accessiblepublishing.ca/epub-semantic-aria-roles/)
+- [-] discuss automation opportunities with @ivan, @hannes
+- [✓]add to template doc
+- [✓]add meta
+- [✓]nest subsections from ch03 onwards
 
-- nest subsections from ch03 onwards
-- add id's to all block elements sections and paragraphs
 
 
 ## Questions 
@@ -53,7 +54,13 @@
 - remove container div `<div id="_idContainer000">`
 - remove @class="delete"
 - transfer indesign html to `book-xhtml` template (or copy body to an older book and change meta)
-
+- change role of note container
+- convert all note divs to aside elements
+- rename `class="_idFootnote"` to `role="footnote"` 
+- class="chapter" → role="chapter"
+- add IDs to all fragment elements
+- remove ` class="Basic-Paragraph"`
+- remove  `_idGenColorInherit`
 
 
 ## Automation
