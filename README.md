@@ -46,7 +46,7 @@ After these steps are complete for each article then the content can be
 published to the DB.
 
 ### /xhtml5-book
-This is the format we have used in the past for technical books using
+This is the format we have used for technical books using
 HTML5 tags (this is a different format than that of the magazines).
 
 This format focuses on structural semantics (e.g part, chapter, section,
@@ -68,8 +68,6 @@ it consists of the:
     type of content is used e.g `role="chapter | section | subsection"`
 
 we've provided two samples:
-- a full book example `204-python` which as you've already guessed is a
-    book about python language
 - a partial law book example `sakkoulas-1-sinaniotis-arhes-endikon-meson` (we will create 1-2 full law book examples
     for the purposes of the demo)
 
@@ -87,10 +85,6 @@ XML guidelines
 ---
 
 ### Tom Prototype site (separate repo)
-This is just an old demo we created many years ago, this was not
-automatically generated, rather TEI XML was converted to a temporary
-html format by hand only for the purposes of a demo, as such this is
-just a visual example and nothing more
 
 you can run it by going to the main directory and running `$ python -m
-SimpleHTTPServer 8000` or an equivalent of your choice
+SimpleHTTPServer 8000` or and equivalent of your choice
