@@ -74,14 +74,14 @@
                 <abstract n="description">
                     <p>The Adventures of Tom Sawyer is an 1876 novel by Mark Twain about a boy growing up along the Mississippi River. It is set in the 1840s in the town of St. Petersburg, which is based on Hannibal, Missouri, where Twain lived as a boy.[2] In the novel, Tom Sawyer has several adventures, often with his friend Huckleberry Finn.</p>
                 </abstract>
-                <!-- Ημερομηνία πρώτης έκδοσης -->
+                <!-- Date of firts publication | Ημερομηνία πρώτης έκδοσης -->
                 <creation>
                     <date notAfter="1876" /> </creation>
-                <!-- Γλώσσα πρωτότυπου κειμένου -->
+                <!-- Languate of original publication | Γλώσσα πρωτότυπου κειμένου -->
                 <langUsage>
                     <language ident="eng">English</language>
                 </langUsage>
-                <!-- κατηγοριοποίηση κειμένου με βάση τa Library of Congress Subject Headings (LCSH) -->
+                <!-- classification of book based on Library of Congress Subject Headings (LCSH) -->
                 <textClass>
                     <keywords scheme="#LCSH">
                         <term type="genre">Fiction -- United States -- 19th century</term>
@@ -152,6 +152,13 @@
                 <edm:dataProvider>data provider goes here</edm:dataProvider>
                 <!--for Europeana EDM compatibility Date of Creation of the publication,  -->
             </edm:EDM>
+        </xenoData>
+        <xenoData xmlns:rx="http://www.bookinbrowser.com/meta/rx" >
+            <rx:RX>
+                <rx:meta name="book.identifier.slug" content="i-am-the-book-slug"/>
+                <rx:meta name="UUID" content="182F28F9-882B-4307-BC0D-99E97A2B61F0"/>
+                <rx:meta name="book.author" content="AuthorFirstName AuthorLastname" />
+            </rx:RX>
         </xenoData>
     </teiHeader>
     <text>

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+                <head>
+                    List of Characters
+                </head> 
+                <listPerson xml:id="listOfPersons">
+                    <!-- Author -->
+                    <!--encoding based on http://www.wwp.northeastern.edu/outreach/seminars/sc2013/presentations/contextual_encoding/contextual_encoding.xml -->
+                    <!-- bio info: http://www.biography.com/people/mark-twain-9512564 -->
+                    <person xml:id="c_mark_twain" sex="m" age="adult" exclude="y">
+                        <!-- Πραγματικό Όνομα -->
+                        <persName sort="2">
+                            <forename type="first">Samuel</forename>
+                            <forename type="middle">Langhorne</forename>
+                            <surname>Clemens</surname>
+                        </persName>
+                        <!-- Ψευδώνυμο -->
+                        <persName sort="1">
+                            <forename>Mark</forename>
+                            <surname>Twain</surname>
+                        </persName>
+                        <!-- Ημερομηνία Γένησης -->
+                        <birth when="1835-11-30">Missouri</birth>
+                        <!-- Ημερομηνία Θανάτου -->
+                        <death when="1910-04-21" />
+                        <!-- Θρησκεία -->
+                        <faith>Presbyterian</faith>
+                        <!-- Υπηκοότητα -->
+                        <nationality>US citizen</nationality>
+                        <!-- Επάγγελμα (ανα χρονική περίοδο) -->
+                        <occupation>Writer</occupation>
+                        <occupation from="1857" to="1861">Steamboat pilot</occupation>
+                        <occupation from="1848">Apprentice Printer</occupation>
+                        <occupation from="1851">Printer</occupation>
+                        <!-- Διεύθυνση / Κατοικία -->
+                        <residence from="1835" to="1839">
+                            <placeName>Florida, Missouri</placeName>
+                        </residence>
+                        <residence from="1839" to="1861">Hanibal, Missouri</residence>
+                        <!-- Προσωπικά Χαρακτηριστικά -->
+                        <trait type="eyecolor">
+                            <label>eye color</label>
+                            <desc>brown</desc>
+                        </trait>
+                        <!-- Οικογενειακή Κατάσταση -->
+                        <state type="marital_status">
+                            <label>marital status</label>
+                            <desc>married</desc>
+                        </state>
+                        <!-- Σημειώσεις -->
+                        <note>Samuel Clemens is better known by his Mark Twain pen name, the author of this book often makes direct commentary within the narrative.</note>
+                    </person>
+                    <!-- Sawyers -->
+                    <person xml:id="c_tom" sex="m" age="c">
+                        <persName sort="1">
+                            <forename type="first">Thomas</forename>
+                            <forename full="abb">Tom</forename>
+                            <surname>Sawyer</surname>
+                        </persName>
+                        <persName type="pseudo" sort="2">the Black Avenger of the Spanish Main</persName>
+                        <note>Tom is the protagonist of the book, a young mischievous boy with a heart of gold and always up to new adventures.</note>
+                        <figure>
+                            <graphic url="media/characters/tom.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_polly" sex="f" age="a">
+                        <persName>
+                            <roleName type="relation">Aunt</roleName>
+                            <forename>Polly</forename>
+                        </persName>
+                        <note>Polly is Tom’s aunt and guardian,  she is kind-hearted and always trying to keep Tom on the right track.</note>
+                        <figure>
+                            <graphic url="media/characters/polly.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_toms_mother" sex="f" age="a">
+                        <persName>
+                            <genName>Tom’s mother</genName>
+                        </persName>
+                        <note>Tom Sawyer’s mother and Polly’s sister, who is deceased.</note>
+                    </person>
+                    <person xml:id="c_mary" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Mary</forename>
+                        </persName>
+                        <note>Mary is Tom’s cousin and a genuinely nice and loving person.</note>
+                        <figure>
+                            <graphic url="media/characters/mary.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_sid" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Sid</forename>
+                            <surname>Sawyer</surname>h </persName>
+                        <note>Sid is Tom’s younger half-brother and the complete opposite of Tom; quite mean-spirited and a telltale.</note>
+                        <figure>
+                            <graphic url="media/characters/sid.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_jim" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Jim</forename>
+                        </persName>
+                        <note>Jim is Aunt Polly’s young African American slave.</note>
+                        
+                        <figure>
+                            <graphic url="media/characters/jim.jpg" />
+                        </figure>
+                    </person>
+                    
+                    <person xml:id="c_peter_the_cat" sex="o" age="o">
+                        <persName>
+                            <genName>Peter the cat</genName>
+                        </persName>
+                        <note>Aunt Polly’s domesticated cat, that is pretty calm until Tom decides to ‘help’ by giving Peter some medication.</note>
+                        <figure>
+                            <graphic url="media/characters/peter_the_cat.jpg" />
+                        </figure>
+                    </person>
+                    <!--Finns  -->
+                    <person xml:id="c_huck" sex="m" age="c">
+                        <persName sort="1">
+                            <forename type="first">Huckleberry</forename>
+                            <forename full="abb">Huck</forename>
+                            <surname>Finn</surname>
+                        </persName>
+                        <persName type="pseudo" sort="2">the Red Handed</persName>
+                        <note>Admired by most children and frowned upon by most grown ups Huckleberry is a young outcast, he is a good friends to everyone who’s nice to him.</note>
+                        <figure>
+                            <head>Image of Huck Finn</head>
+                            <graphic url="media/characters/huckleberry.jpg" />
+                            <figDesc>Image of Huck Finn</figDesc> <!-- this becomes alt text in HTML conversion -->
+                        </figure>
+                    </person>
+                    <person xml:id="c_pap" sex="m" age="a">
+                        <persName>
+                            <roleName type="relation">Pap</roleName>
+                        </persName>
+                        <note>Huck’s father, he make no appearance in the story but it is mentioned that he like to get drunk and doesn't take good care of Huck.</note>
+                    </person>
+                    <!-- Thatchers -->
+                    <person xml:id="c_becky" sex="f" age="c">
+                        <persName>
+                            <forename full="abb">Becky</forename>
+                            <surname>Thatcher</surname>
+                        </persName>
+                        <note>Becky is Tom’s main love interest in the book, a very sentimental and moody girl.</note>
+                        <figure>
+                            <graphic url="media/characters/becky.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_judge_thatcher" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Judge</roleName>
+                            <forename>Thatcher</forename>
+                        </persName>
+                        <note>Judge The county judge and Becky’s father is a newcomer in St. Petersburg. He is admired by almost everyone in St. Petersburg.</note>
+                        <figure>
+                            <graphic url="media/characters/judge_thatcher.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_jeff_thatcher" sex="m" age="a">
+                        <persName>
+                            <forename type="first">Jeff</forename>
+                            <surname>Thatcher</surname>
+                        </persName>
+                        <note>Jeff Thatcher is friends with Tom, he is also Becky’s cousin.</note>
+                    </person>
+                    <person xml:id="c_mrs_thatcher" sex="f" age="a">
+                        <persName>
+                            <roleName type="title">Mrs.</roleName>
+                            <surname>Thatcher</surname>
+                        </persName>
+                        <note>Mrs. Thatcher is Becky’s mother.</note>
+                        <figure>
+                            <graphic url="media/characters/mrs_thatcher.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_maid_servant" sex="f" age="a">
+                        <persName>
+                            <roleName type="occupation">Maid Servant</roleName>
+                        </persName>
+                        <note>The Thatcher family house maid.</note>
+                        <figure>
+                            <graphic url="media/characters/maid_servant.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_lawyer_thatcher" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Lawyer</roleName>
+                            <surname>Thatcher</surname>
+                        </persName>
+                        <note>Jeff Thatcher's and Becky's uncle.</note>
+                    </person>
+
+                    <!-- Rogers -->
+                    <person xml:id="c_ben_rogers" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Benjamin</forename>
+                            <forename full="abb">Ben</forename>
+                            <surname>Rogers</surname>
+                        </persName>
+                        <note>Ben Rogers is one of Tom’s classmates and friends. He is the first ‘victim’ of Tom’s whitewashing ‘social experiment’. </note>
+                    </person>
+                    <person xml:id="c_sally_rogers" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Sally</forename>
+                            <surname>Rogers</surname>
+                        </persName>
+                        <note>Ben Roger's sister and Becky Thatcher’s friend.</note>
+                    </person>
+                    <person xml:id="c_uncle_jake" sex="m" age="a">
+                        <persName>
+                            <roleName type="title">Uncle Jake</roleName>
+                        </persName>
+                        <note>The Rogers’family slave. He allows Huck to sleep in the hayloft and gives him spare food.</note>
+                        <figure>
+                            <graphic url="media/characters/uncle_jake.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Jones -->
+                    <person xml:id="c_the_welchman" sex="m" age="a">
+                        <persName>
+                            <roleName type="title">Mr. </roleName>
+                            <surname>Jones</surname>
+                        </persName>
+                        <note>Often simply referred as ‘the Welchman’, Mr Jones lives in Cardiff Hill (downhill from widow Douglas’s mansion) with his two sons and offers his help when people need it the most.</note>
+                        <figure>
+                            <graphic url="media/characters/the_welshman.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_welchmans_sons" sex="m" age="a">
+                        <persName>
+                            <genName>The Welshman’s Sons</genName>
+                        </persName>
+                        <note>The sons of the Welshman.</note>
+                    </person>
+                    
+                    <!-- Lawrence -->
+                    <person xml:id="c_amy_lawrence" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Amy</forename>
+                            <surname>Lawrence</surname>
+                        </persName>
+                        <note>Amy is Tom’s classmate and his first love interest.</note>
+                        <note type="spoiler">After Tom falls in love with Becky he forgets all about Amy.</note>
+                        <figure>
+                            <graphic url="media/characters/amy_lawrence.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Douglas -->
+                    <person xml:id="c_widow_douglas" sex="f" age="a">
+                        <persName>
+                            <roleName type="title">Widow</roleName>
+                            <surname>Douglas</surname>
+                        </persName>
+                        <note> A wealthy kind-hearted who lives at her mansion located in Cardiff Hill, she is generous and kind to everyone.</note>
+                        <figure>
+                            <graphic url="media/characters/widow_douglas.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Potter -->
+                    <person xml:id="c_muff_potter" sex="m" age="a">
+                        <persName>
+                            <forename type="first">Muffren</forename>
+                            <forename full="abb">Muff</forename>
+                            <surname>Potter</surname>
+                        </persName>
+                        <note>Muff Potter is an old drunkard with a good heart but gets himself in trouble as he is falsely accused of murder.</note>
+                        <note>During his trial Tom appears as a witness and reveals the truth. </note>
+                        <figure>
+                            <graphic url="media/characters/muff_potter.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Hoss Williams -->
+                    <person xml:id="c_hoss_williams" sex="m" age="a">
+                        <persName>
+                            <forename type="first">Hoss</forename>
+                            <surname>Williams</surname>
+                        </persName>
+                        <note>A recently deceased man.</note>
+                        <note type="spoiler">Dr. Robinson, Muff Potter and Injun Joe attempt to rob Hoss Williams body from its grave then suddenly everything goes south.</note>
+                    </person>
+                    <!-- Robinson -->
+                    <person xml:id="c_dr_robinson" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Doctor</roleName>
+                            <surname>Robinson</surname>
+                        </persName>
+                        <note>Doctor Robinson is a doctor living in St. Persburg. </note>
+                        <note type="spoiler">He attempts to rob the grave of the recently departed Hoss Williams with the help of Injun Joe and Muff Potter; ironically he ends up dead after the robbery goes wrong.</note>
+                        <figure>
+                            <graphic url="media/characters/dr_robinson.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Church related -->
+                    <person xml:id="c_rev_sprague" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Reverend</roleName>
+                            <surname>Sprague</surname>
+                        </persName>
+                        <note>Reverend Sprague, the town’s church minister.</note>
+                        <figure>
+                            <graphic url="media/characters/rev_sprague.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Legal -->
+                    <person xml:id="c_the_sheriff" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Sheriff</roleName>
+                        </persName>
+                        <note>The town’s sheriff.</note>
+                        <note type="spoiler"> He arrests Muff Potter in the graveyard.</note>
+                        <figure>
+                            <graphic url="media/characters/the_sheriff.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_the_counsel" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Counsel</roleName>
+                        </persName>
+                        <note>Counsel of prosecution at Muff Potters trial</note>
+                    </person>
+                    <person xml:id="c_muffs_counsel" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Muff Potters Counsel</roleName>
+                        </persName>
+                        <note>Counsel of prosecution at Muff Potters trial</note>
+                    </person>
+                    
+                    <!-- School Staff -->
+                    <person xml:id="c_mr_walters" sex="m" age="a">
+                        <persName>
+                            <roleName type="title">Mr.</roleName>
+                            <surname>Walters</surname>
+                        </persName>
+                        <note>Sunday school superintendent Mr. Walters.</note>
+                        <note type="spoiler">Awards Tom a bible despite knowing he did not really earn the tickets himself.</note>
+                        <figure>
+                            <graphic url="media/characters/mr_walters.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_schoolmaster" sex="m" age="a">
+                        <persName>
+                            <roleName type="title">Mr.</roleName>
+                            <surname>Dobbins</surname>
+                        </persName>
+                        <note>Dobbins is the schoolmaster, he is widely hated among the young students for his strictness. His big dream was to become a doctor was never realized and he is constantly bitter about that fact.</note>
+                        <note type="spoiler">Dobbins keeps an anatomy book locked in his desk which is accidentally torn by Becky Thatcher, when Dobbins discovers the torn page he is furious and tries to find the perpetrator, Tom heroically protects Becky by claiming he was guilty.  </note>
+                        <figure>
+                            <graphic url="media/characters/the_master.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Public Figures -->
+                    <person xml:id="c_the_mayor" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Mayor</roleName>
+                        </persName>
+                        <note>The village’s mayor.</note>
+                    </person>
+                    <person xml:id="c_mayors_wife" sex="f" age="a">
+                        <persName>
+                            <roleName type="relation">Mayor’s wife</roleName>
+                        </persName>
+                        <note>The Mayor’s Wife.</note>
+                    </person>
+                    <person xml:id="c_the_editor" sex="m" age="a">
+                        <persName>
+                            <roleName type="title">Editor</roleName>
+                        </persName>
+                        <note>The editor of the local newspaper.</note>
+                        <note type="spoiler">After, he witnesses Tom and Huck’s found treasures he profiles Tom in the village newspaper.</note>
+                    </person>
+                    <person xml:id="c_judge_fraser" sex="m" age="a">
+                        <persName>
+                            <roleName type="occupation">Judge</roleName>
+                            <surname>Frazer</surname>
+                        </persName>
+                        <note>Judge Frazer is the leader of the Cadets of Temperance, a group that tries to prevent boys in the town from drinking, swearing, smoking. </note>
+                        <note type="spoiler">Tom joins the Cades of Temperance but soon get bored and is about to quit until he finds out that Judge Frazer is about to die, he decides to wait a little longer so he can wear the Cadets of Temperance sash in the funeral. After a while Tom gets sick of waiting and hands his resignation, the same day Frazer dies. </note>
+                    </person>
+                    <person xml:id="c_librarian" sex="o" age="a" exclude="y">
+                        <persName>
+                            <roleName type="occupation">Librarian</roleName>
+                        </persName>
+                        <note>The Librarian.</note>
+                    </person>
+                    <!-- Temple Family -->
+                    <person xml:id="c_alfred_temple" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Alfred</forename>
+                            <surname>Temple</surname>
+                        </persName>
+                        <note>Originally from St. Louis Alfred in a newcomer in St. Peterburg Alfred becomes Tom’s enemy from their very first encounter.</note>
+                        
+                        <figure>
+                            <graphic url="media/characters/alfred_temple.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_mrs_temple" sex="f" age="a">
+                        <persName>
+                            <roleName type="title">Mrs.</roleName>
+                            <surname>Temple</surname>
+                        </persName>
+                        <note>Alfred Temple’s mother.</note>
+                    </person>
+                    <!--Injun Joe -->
+                    <person xml:id="c_injun_joe" sex="m" age="a">
+                        <persName notAfter-custom="Ch25">
+                            <genName>Injun Joe</genName>
+                        </persName>
+                        <persName notBefore-custom="Ch25" notAfter-custom="Ch26sc02an03">
+                            <genName>The Spaniard</genName>
+                        </persName>
+                        <persName notBefore-custom="ch26sc02an03">
+                            <genName>Injun Joe</genName>
+                        </persName>
+                        <note>The story’s main villain Injun Joe is feared and loathed in St. Petersburg, he is believed to be violent and dangerous and has had many troubles with the law.</note>
+                        <note type="spoiler">Joe and Muff Potter are hired by Dr. Robinson to steal the corpse of Hoss Williams. At the graveyard Dr. Robinsons gets into a fight over money and joe stabs him to death while Muff is knocked unconscious. When Muff regains consciousness Joe makes him believe he was the one that stabbed Dr. Robinson. Tom and Huck witness the murder and the event haunts them for the rest of the story. </note>
+                        <figure>
+                            <graphic url="media/characters/injun_joe.jpg" />
+                        </figure>
+                    </person>
+                    <!-- Ragged man -->
+                    <person xml:id="c_ragged_man" sex="m" age="a">
+                        <persName>
+                            <genName>Ragged Man</genName>
+                        </persName>
+                        <note>Injun Joe’s accomplice. Not much is reaveled about his character his name is never revealed, all we know is that is have a wife named Nance and has children.</note>
+                        <figure>
+                            <graphic url="media/characters/ragged_man.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_nance" sex="m" age="a">
+                        <persName>
+                            <genName>Nance</genName>
+                        </persName>
+                        <note>Ragged mans wife</note>
+                    </person>
+                    <!-- important characters -->
+                    
+                    
+                    <!-- other voiceless characters (aka characters mentioned, but with minimal/no contibution to the
+                        plot) -->
+                    <person xml:id="c_old_hays" sex="m" age="a" exclude="y">
+                        <persName>
+                            <surname>Hays</surname>
+                        </persName>
+                        <note>Old Hays, an old person of the town.</note>
+                    </person>
+                    <person xml:id="c_postmaster" sex="m" age="a" exclude="y">
+                        <persName>
+                            <roleName type="occupation">Postmaster</roleName>
+                        </persName>
+                        <note>The postmaster.</note>
+                    </person>
+                    
+                    <person xml:id="c_johnny_baker" sex="m" age="c">
+                        <persName>
+                            <genName>Johnny Baker</genName>
+                        </persName>
+                        <note> is a boy in the town of St Petersburg who takes part in the grapevine about wart treatment it is.</note>
+                    </person>
+                    <person xml:id="c_signpainters_son" sex="m" age="c" exclude="y">
+                        <persName>
+                            <genName>The sign painter’s son</genName>
+                        </persName>
+                        <note>The sign painter’s son conspires with the school children against schoolmaster Dobbins</note>
+                    </person>
+                    
+                    <person xml:id="c_mother_hopkins" sex="f" age="a">
+                        <persName>
+                            <genName>Mother Hopkins</genName>
+                        </persName>
+                        <note>Old Mother Hopkins, rumoured to be a witch. Although she does not appear in the book Huck claims she has advised him on how to get rid of warts and that once she “was a witching” his father and broke his arm as a result. </note>
+                        <figure>
+                            <graphic url="media/characters/mother_hopkins.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_detective" sex="m" age="a" exclude="y">
+                        <persName>
+                            <roleName type="occupation">Detective</roleName>
+                        </persName>
+                        <note>The detective that came from St. Louis to help with the search for Injun Joe but leaves empty handed.</note>
+                        <figure>
+                            <graphic url="media/characters/detective.jpg" />
+                        </figure>
+                    </person>
+                   
+                    <!-- millers -->
+                    <person xml:id="c_johnny_miller" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Johnny</forename>
+                            <surname>Miller</surname>
+                        </persName>
+                        <note>Johnny Miller is one of Tom’s classmates and friends.</note>
+                        <note type="spoiler">Johnny gives Tom a dead rat in a string after Tom allows him to whitewash Aunt Polly’s fence.</note>
+                    </person>
+                    <person xml:id="c_grace_miller" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Gracie</forename>
+                            <surname>Miller</surname>
+                        </persName>
+                        <!-- review -->
+                        <note>Johnny Millers sister, she has an accident in the kitchen and gets burned Tom and Huck think this was because a stray dog was around at the time (superstition).</note>
+                    </person>
+                    <!-- review -->
+                    
+                    
+                    <!-- harpers -->
+                    <person xml:id="c_joe_harper" sex="m" age="c">
+                        <persName sort="1">
+                            <forename type="first">Joseph</forename>
+                            <forename full="abb">Joe</forename>
+                            <surname>Harper</surname>
+                        </persName>
+                        <persName type="pseudo" sort="2">the Terror od the Seas</persName>
+                        <note>Joe Harper is Tom’s classmate (they sit next to each other) and best friend, they play mock wars together.</note>
+                        <note type="spoiler">Joe Tom and Huck run off to Jackson island to become pirates and upset the whole town since they are believed to have drowned.</note>
+                        <figure>
+                            <graphic url="media/characters/joe_harper.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_mrs_harper" sex="f" age="a">
+                        <persName>
+                            <roleName type="title">Mrs.</roleName>
+                            <forename>Sereny</forename>
+                            <surname>Harper</surname>
+                        </persName>
+                        <note>Joe Harper’s Mother.</note>
+                    </person>
+                    <person xml:id="c_susy_harper" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Susy</forename>
+                            <surname>Harper</surname>
+                        </persName>
+                        <note>Joe Harpers sister.</note>
+                    </person>
+                    
+                    <!-- minor characters: classmates and theri relatives -->
+                    <person xml:id="c_willie_mufferson" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Willie</forename>
+                            <surname>Mufferson</surname>
+                        </persName>
+                        <note>Known to be the town’s best behaved child and “the pride of all mothers”, he is despised by Tom.</note>
+                        <figure>
+                            <graphic url="media/characters/willie_mufferson.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_mrs_mufferson" sex="f" age="a">
+                        <persName>Mrs. Mufferson</persName>
+                        <note>Willie Muffersons mother</note>
+                        <figure>
+                            <graphic url="media/characters/mrs_mufferson.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_jim_hollis" sex="m" age="c" exclude="y">
+                        <persName>
+                            <forename type="first">Jim</forename>
+                            <surname>Hollis</surname>
+                        </persName>
+                        <note>Jim Hollis, a friend of Tom’s.</note>
+                    </person>
+                    
+                    <person xml:id="c_billy_fisher" sex="m" age="c" exclude="y">
+                        <persName>
+                            <forename type="first">Billy</forename>
+                            <surname>Fisher</surname>
+                        </persName>
+                        <note>Billy Fisher is one of Tom’s classmates and friends. He gives tom a kite in exchange for a change to whitewash the fence.</note>
+                        <figure>
+                            <graphic url="media/characters/billy_fisher.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_bob_tanner" sex="m" age="c">
+                        <persName>
+                            <forename type="first">Bob</forename>
+                            <surname>Tanner</surname>
+                        </persName>
+                        <note>Bob Tanner is one of Tom’s classmates and friends.</note>
+                    </person>
+                    <person xml:id="c_bill_turner" sex="m" age="c">
+                        <persName>
+                            
+                            <forename>Bill</forename>
+                            <surname>Turner</surname>
+                            <note>Someone who drowned in the Mississipi river the summer before the story takes place.</note>
+                            <note type="spoiler">Not long after Tom, Huck and Joe go to Jackson’s island without telling anyone hey hear cannons being fired, Tom realises they are searching for drowned bodies after remebering that cannons were fired over the water to reveal Taylor’s body, soon he realises they must be searching for their bodies.</note>
+                        </persName>
+                        
+                    </person>
+                    <person xml:id="c_taylor_benny" sex="m" age="o">
+                        <!-- add ref -->
+                        <persName>
+                            <forename>Benny</forename>
+                            <surname>Taylor</surname>
+                            <note>One of Tom’s friends.</note>
+                            <note type="spoiler">Tom borrows Benny’s wagon to carry the treasure he and Huck found .</note>
+                        </persName>
+                        
+                    </person>
+                    <person xml:id="c_tavern_keepers_son" sex="m" age="c">
+                        <persName>
+                            <roleName type="relation">Tavern Keeper’s Son</roleName>
+                        </persName>
+                        <note>The son of the Temperance Tavern’s owner.</note>
+                    </person>
+                    <!-- Characters mentioned in the book as a groups of people -->
+                    <person xml:id="c_teachers" sex="o" age="a" exclude="y">
+                        <persName>
+                            <roleName type="occupation">Teachers</roleName>
+                        </persName>
+                        <note>The young teachers, male and female, at Sunday school.</note>
+                    </person>
+                    <person xml:id="c_the_mourner" sex="f" age="a" exclude="y">
+                        <persName>
+                            <roleName type="occupation">Mourners</roleName>
+                        </persName>
+                        <note>Mourners are women assigned to mourn the passing person at a funeral.</note>
+                        <figure>
+                            <graphic url="media/characters/the_mourner.jpg" />
+                        </figure>
+                    </person>
+                    <person xml:id="c_rogerses" sex="o" exclude="y">
+                        <persName>The Rogers family</persName>
+                        <note>Mentioned as a group</note>
+                    </person>
+                    <person xml:id="c_harpers" sex="o" exclude="y">
+                        <persName>The Harpers family</persName>
+                        <note>Mentioned as a group</note>
+                    </person>
+                    <person xml:id="c_thatchers" sex="o" exclude="y">
+                        <persName>The Thatchers family</persName>
+                        <note>Mentioned as a group</note>
+                    </person>
+                    <person xml:id="c_doctor" sex="m" age="a">
+                        <persName>doctor</persName>
+                        <note>The doctor gets pretty busy when a measles outbreak occurs.</note>
+                    </person>
+                    <person xml:id="c_town_mothers" sex="f" age="a" exclude="y">
+                        <persName>the mothers of the town</persName>
+                        <note>Mentioned as a group</note>
+                    </person>
+                    <person xml:id="c_the_pupils" sex="o" age="c" exclude="y">
+                        <persName>the pupils</persName>
+                        <note>Mentioned as a group</note>
+                    </person>
+                    <person xml:id="c_murels_gang" sex="o" age="a" exclude="y">
+                        <persName>Murel’s gang</persName>
+                        <note> John A. Murel was a notorious bandit who along with his gang operated along the Mississippi River in the United States in first half of the nineteenth century. </note>
+                    </person>
+                    <!-- FICTIONAL CHARACTERS -->
+                    <person xml:id="c_robin_hood" sex="m" age="a">
+                        <persName>Robing Hood, the legendary outlaw.</persName>
+                        <note>Tom and Jow </note>
+                        
+                    </person>
+                    <person xml:id="c_guy_of_guisborne" sex="m" age="a">
+                        <persName>Guy of Guisborne</persName>
+                        <note type="c_desc"> One of Robin Hood’s enemies. </note>
+                    </person>
+                    <person xml:id="c_merryman_friar_tuck" sex="m" age="a" exclude="y">
+                        <persName>Friar Tuck</persName>
+                        <note>A common character in Robin Hood stories part part of Robin Hood’s ‘Merry Men’ .</note>
+                    </person>
+                    <person xml:id="c_merryman_much" sex="m" exclude="y">
+                        <persName>Much the miller’s son </persName>
+                        <note>Much is part of Robin Hood’s group of outlaws.</note>
+                    </person>
+                    <person xml:id="c_sherrif_of_nottingham" sex="m" age="a" exclude="y">
+                        <persName>Sherrif on Nottingham</persName>
+                        <note>The main villain in the legend of Robin Hood</note>
+                    </person>
+                    
+                    <!-- anonymous -->
+                    <person xml:id="c_anonymous" sex="o" age="a" exclude="y">
+                        <persName>
+                            <genName>Anonymous</genName>
+                        </persName>
+                        <note>Nameless person or multiple people of the community.</note>
+                    </person>
+                    <person xml:id="c_anonymous_kids" sex="o" age="c" exclude="y">
+                        <persName>
+                            <genName>Kids</genName>
+                        </persName>
+                        <note>Nameless kids (multiple) at school.</note>
+                    </person>
+                    <person xml:id="c_mary_austin" sex="f" age="c">
+                        <persName>
+                            <forename type="first">Mary</forename>
+                            <surname>Austin</surname>
+                        </persName>
+                        <note>A girl from school.</note>
+                    </person>
+                    <person xml:id="c_nameless_boy" sex="m" age="c" exclude="y">
+                        <persName>
+                            <genName>Nameless Boy</genName>
+                        </persName>
+                        <note>Any nameless boy (not an individual).</note>
+                    </person>
+                    <person xml:id="c_nameless_girl" sex="f" age="c" exclude="y">
+                        <persName>
+                            <genName>Nameless Girl</genName>
+                        </persName>
+                        <note>Any nameless girl (not an individual).</note>
+                    </person>
+                    <!-- Encoders, the encoding team -->
+                    <person xml:id="ed_trianta" sex="m" exclude="y" />
+                    <person xml:id="ed_mao" sex="m" exclude="y" />
+                    <person xml:id="ed_aris" sex="m" exclude="y" />
+                    <person xml:id="ed_michalis" sex="m" exclude="y" />
+                    <person xml:id="ed_lena" sex="f" exclude="y" />
+                    
+                    
+                    <!-- RELATIONSHIPS
+                    sources:
+                    [TEI Element Relation](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relation.html)
+                    [Prosopography Relations](http://wiki.tei-c.org/index.php/Prosopography)
+                    think:
+                    all active, mutual, passive valuse in listRelation are persons think about objects too
+                    
+                    valueOf@active as `is or acts upon` valueOf@name valueOf@passive
+                    Aunt polly (is) owner (of) Jim 
+                    Injun Joe murders Dr Robinson
+                    explode valueOf@mutual intro separate nodes e.g. if @mutual="tom sid"
+                    Som is cousin of Sid
+                    Sid is cousin of tom
+                    -->
+                    <listRelation type="relationships">
+                        <!--tom  family-->
+                        <relation type="personal" name="sibling" mutual="#c_tom #c_sid" />
+                        <relation type="personal" name="parent" active="#c_toms_mother" passive="#c_tom #c_sid" />
+                        <relation type="personal" name="cousin" mutual="#c_tom #c_mary #c_sid" />
+                        <relation type="personal" name="nephew" active="#c_tom #c_sid" passive="#c_polly" />
+                        <relation type="personal" name="siblings" mutual="#c_polly #c_toms_mother" />
+                        <relation type="social" name="owner" active="#c_polly" passive="#c_jim" />
+                        <relation type="other" name="owner" active="#c_polly" passive="#c_peter_the_cat" />
+                        <!--tom  important friends-->
+                        <relation type="personal" name="closefriends" mutual="#c_tom #c_huck #c_joe_harper" n="Best Friends" />
+                        <relation type="personal" name="closeFriends" mutual="#c_tom #c_amy_lawrence" />
+                        <relation type="personal" name="closeFriends" mutual="#c_tom #c_becky_thatcher" />
+                        <relation type="social" name="acq" mutual="#c_tom #c_judge_thatcher" />
+                        <relation type="social" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_becky" />
+                        <relation type="personal" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_maid_servant" />
+                        <relation type="personal" name="cousin" mutual="#c_becky #c_jeff_thatcher" />
+                        <relation type="social" name="parent" active="#c_lawyer_thatcher" passive="#c_jeff_thatcher" />
+                        
+                        <relation type="social" name="classmates" mutual="#c_tom #c_ben_rogers #c_jeff_thatcher #c_billy_fisher #c_johnny_miller #c_bob_tanner #c_jim_hollis #c_mary_austin #c_grace_miller #c_sally_rogers #c_susy_harper #c_johnny_baker" />
+                        <relation type="personal" name="enemy" mutual="#c_tom #c_alfred_temple" />
+                        <relation type="personal" name="mother" active="#c_mrs_temple" passive="#c_alfred_temple" />
+                        <relation type="personal" name="mother" active="#" passive="#c_alfred_temple" />
+                        <relation type="personal" name="enemy" active="#c_tom" passive="#c_willie_mufferson" />
+                        <relation type="personal" name="mother" active="#c_mrs_mufferson" passive="#c_willie_mufferson" />
+                        <relation type="personal" name="sibling" mutual="#c_ben_rogers #c_sally_rogers" />
+                        <relation type="personal" name="mother" active="#c_mrs_harper" passive="#c_joe_harper" />
+                        <relation type="personal" name="siblings" mutual="#c_joe_harper #c_susy_harper" />
+                        <relation type="personal" name="siblings" mutual="#c_johnny_miller #c_grace_miller" />
+                        
+                        
+                        <relation type="social" name="acq" mutual="#c_tom #c_mr_walters" />
+                        <relation type="social" name="acq" mutual="#c_tom #_rev_sprague" />
+                        <relation type="social" name="acq" mutual="#c_tom #c_mr_dobbins" />
+                        <relation type="social" name="acq" mutual="#c_tom #c_tavern_keepers_son" />
+                        <relation type="social" name="acq" mutual="#c_doctor" />
+                        <!-- review -->
+                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_robin_hood" />
+                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_guy_of_guisborne" />
+                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_sheriff_of_nottingham" />
+                        
+                        <!-- huck -->
+                        <relation type="social" name="son" active="#c_huck" passive="#c_pap" />
+                        <relation type="social" name="friend" mutual="#c_huck #c_uncle_jake" />
+                        <relation type="social" name="enemy" mutual="#c_huck #c_mother_hopkins " />
+                        
+                        
+                        <!-- injun -->
+                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_tom " />
+                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_huck " />
+                        <relation type="personal" name="gravediggers" active="#c_injun_joe #c_muff_potter #c_dr_robinson" passive="#c_hoss_williams" />
+                        <relation type="personal" name="accomplices" mutual="#c_injun_joe #c_ragged_man" />
+                        <relation type="personal" name="married" mutual="#c_ragged_man #c_nance" />
+                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_muff_potter " />
+                        <relation type="social" name="murders" active="#c_injun_joe" passive="#c_dr_robinson" />
+                        <!-- muff -->
+                        <relation type="personal" name="friend" mutual="#c_muff_potter #c_tom #c_huck " />
+                        <relation type="personal" name="witness" active="#c_tom" passive="#c_muff_potter" />
+                        <relation type="personal" name="defends" active="#c_muffs_counsel" passive="#c_muff_potter"/>
+                        <relation type="social" name="arrests" active="#c_the_sherrif" passive="#c_muff_potter"/>
+                        <!-- the welshman -->
+                        <relation type="social" name="parent" active="#c_the_welchman" passive="#c_welchmans_sons" />
+                        
+                        <!-- widow -->
+                        <relation type="social" name="acq" mutual="#c_widow_douglas #c_tom #c_huck #c_the_welchman" />
+                        
+                        
+                        
+                        <relation type="personal" name="guardian" active="#c_widow_douglas" passive="#c_huck" />
+                        <relation type="social" name="friends" mutual="#c_the_welchman #c_huck" />
+                        <relation type="personal" name="father" active="#c_judge_thatcher" passive="#c_becky" />
+                        <relation type="personal" name="mother" active="#c_mrs_thatcher" passive="#c_becky" />
+                        <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_lawyer_thatcher" />
+                        <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_jeff_thatcher" />
+                        <relation type="personal" name="owner" active="#c_judge_thatcher" passive="#c_maid_servant" />
+                        
+                        
+                    </listRelation>
+   
+                        
+                        
+                    
+                    
+                 
+                    
+                </listPerson>
+            </div>
