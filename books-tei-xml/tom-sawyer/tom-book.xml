@@ -190,13 +190,16 @@
         </front>
         <!-- Κυρίως κείμενο (body) -->
         <body>
+             
             <div xml:id="book">
+                <!--
                 <schemaSpec ident="tei_vivlio" docLang="en" prefix="viv_" xml:lang="en">
                     <moduleRef key="core" except="" />
                     <moduleRef key="tei" except="" />
                     <moduleRef key="header" except="" />
                     <moduleRef key="textstructure" except="" />
                 </schemaSpec>
+                 -->
                 <div xml:id="c1" n="I" type="chapter">
         <head> <pb xml:id="pb-5015928D-740B-422D-8562-DF8F4E01EAB7" n="17" facs="media/pages/p17.jpg"/>Chapter I</head>
         <figure xml:id="ill_page_017" exclude="true">
@@ -783,7 +786,6 @@
                     <figure xml:id="ill_page_028" rend="nav" corresp="#c_jim">
                         <graphic url="media/illustrations/ill_page_028.jpg" rend="full" />
                         <graphic url="media/illustrations/ill_page_c_028.jpg" rend="crop" />
-
                         <head>Tendin’ to business.</head>
                         <figDesc>Jim running to fetch water from the town pump</figDesc>
                     </figure>
@@ -1540,7 +1542,7 @@
                         <date when="1845-05-11">Sunday</date>
                         <time when="10:30:00">morning</time>
                     </note>
-                    <figure xml:id="ill_page_057" prev="" rend="tl">
+                    <figure xml:id="ill_page_057" rend="tl">
                         <graphic url="media/illustrations/ill_page_057.jpg" />
                         <graphic url="media/illustrations/ill_page_c_057.jpg" rend="crop" />
 
@@ -1807,7 +1809,7 @@
                 <rs type="persTrait" ref="#c_huck" corresp="#c_anonymous">the juvenile pariah of the village</rs>, <rs type="persRef" ref="#c_huck">Huckleberry Finn</rs>
             </seg> , <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">son of <rs type="persRef" ref="#c_pap" rendition="notInScene">the town drunkard</rs>
             </rs>.  <seg xml:id="th_209" type="#ethics">Huckleberry was cordially hated and dreaded by all the mothers of the town, because he was <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">idle</rs> and <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">lawless</rs> and <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">vulgar</rs> and <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">bad</rs> — and because all their children <rs type="persTrait" ref="#c_huck" corresp="#c_anonymous_kids">admired</rs> him so, and delighted in his forbidden society, and wished they dared to be like him.</seg>
-            <note resp="#trianta" type="comment">in this case the narrator -Mark Twain- most probably distances himself from what the mothers think of Huck (hence the use of <gi>soCalled</gi>).</note>
+            <note resp="#trianta" type="comment">in this case the narrator -Mark Twain- most probably distances himself from what the mothers think of Huck (hence the use of soCalled).</note>
             <seg xml:id="th_210" type="#childhood">Tom was like the rest of the <pb xml:id="pb-37E50A78-C0F2-4F1E-91E3-0CE1E1E390B6" n="64" facs="media/pages/p64.jpg"/>respectable boys, in that he envied Huckleberry <rs type="persTrait" ref="#c_huck" corresp="c_anonymous">his gaudy outcast condition</rs>, and was under strict orders not to play with him. So he played with him every time he got a chance.</seg> Huckleberry was always dressed in the cast-off clothes of full-grown men, and they were in perennial bloom and fluttering with rags. His hat was a vast ruin with a wide crescent lopped out of its brim; his coat, when he wore one, hung nearly to his heels and had the rearward buttons far down the back; but one suspender supported his trousers; the seat of the trousers bagged low and contained nothing, the fringed legs dragged in the dirt when not rolled up.</p>
                     <p xml:id="ts-C61A312F-0C77-4AF5-8C3F-4237338F5C38">
             <seg xml:id="th_212" type="#ethics">Huckleberry <rs type="persTrait" ref="#c_huck">came and went, at his own free will </rs>. He slept on doorsteps in fine weather and in empty hogsheads in wet; he did not have to go to school or to church, or call any being master or obey anybody; he could go fishing or swimming when and where he chose, and stay as long as it suited him; nobody forbade him to fight; he could sit up as late as he pleased; he was always the first boy that went barefoot in the spring and the last to resume leather in the fall; he never had to wash, nor put on clean clothes; he could swear wonderfully. In a word, everything that goes to make life precious that boy had. So thought every harassed, hampered, respectable boy in St. Petersburg.</seg>
@@ -2023,18 +2025,15 @@
                                 </distinct> to do any good. You got to go all by yourself, to the middle of the woods, where you know there’s a spunk-water stump, and just as it’s midnight you back up against the stump and jam your hand in and say</seg>:
                             <!-- FIX: saying formatting -->
                             <said who="#c_tom">
-                                <l>
-                                    <seg xml:id="th_226" type="#superstition">“Barley-corn, barley-corn, injun-meal shorts,</seg>
-                                </l>
-                                <l>
-                                    <seg xml:id="th_227" type="#superstition">Spunk-water, spunk-water,
+                                <seg xml:id="th_226" type="#superstition">“Barley-corn, barley-corn, injun-meal shorts,</seg>
+                                <seg xml:id="th_227" type="#superstition">Spunk-water, spunk-water,
                                         <distinct type="l_sae">
                                             <choice>
                                                 <orig xml:base="http://www.antimoon.com/forum/t6321.htm">swaller</orig>
                                                 <reg>swallow</reg>
                                             </choice>
                                         </distinct> these warts,”</seg>
-                                </l>
+                                
                             </said>
                             <seg xml:id="th_228" type="#superstition">and then walk away quick, eleven steps, with your eyes shut, and then turn around three times and walk home without speaking to anybody. Because if you speak the charm’s busted.”</seg>
                         </said>
@@ -4158,7 +4157,6 @@
                     </p>
                     <p xml:id="ts-91E06404-8393-40C2-82C7-845BEAB1D8D4">
                         <said who="#c_tom">
-                            <surname>
                                 <seg xml:id="th_456" type="#ethics">“And besides,
                                     <distinct type="l_sae">
                                         <choice>
@@ -4176,7 +4174,7 @@
                                             </reg>
                                         </choice>
                                     </distinct>!”</seg>
-                            </surname>
+                            
                         </said>
                     </p>
                     <p xml:id="ts-94B447F1-4406-48C4-B6C7-388561CA10AC">
@@ -5833,7 +5831,7 @@
                     <p xml:id="ts-35358B45-E0F1-4ADB-B26B-DB6712804805">They lay around in the shade, after breakfast, while Huck had a smoke, and then went off through the woods on an exploring expedition. They tramped gayly along, over decaying logs, through tangled underbrush, among solemn monarchs of the forest, hung from their crowns to the ground with a drooping regalia of
                         <rs type="obRef" subtype="flora" ref="#ob_grape_vines" rendition="inScene">grape-vines</rs>. Now and then they came upon snug nooks carpeted with grass and jeweled with
                         <rs type="obRef" subtype="flora" ref="#ob_flowers" rendition="inScene">flowers</rs>.</p>
-                    <p xml:id="ts-12DFC533-84AC-4B23-9F3C-44FBC0B44639"> <pb xml:id="pb-0FAC2B3F-FE4D-4FA8-BAE6-8FFA6729578A" n="124" facs="media/pages/p124.jpg"/> <geo>They found plenty of things to be delighted with, but nothing to be astonished at. They discovered that the island was about three miles long and a quarter of a mile wide, and that the shore it lay closest to was only separated from it by a narrow channel hardly two hundred yards wide.</geo> They took a swim about every hour, so it was close upon the middle of the afternoon when they got back to camp. They were too hungry to stop to fish, but they fared sumptuously upon cold <rs type="obRef" subtype="food" ref="#ob_ham" rendition="inScene">ham</rs>, and then threw themselves down in the shade to talk. But the talk soon began to drag, and then died. <seg ana="#childhood">The stillness, the solemnity that brooded in the woods, and the sense of loneliness, began to tell upon the spirits of the boys. They fell to thinking. A sort of undefined longing crept upon them. This took dim shape, presently — it was budding <rs type="emotionsRef" ref="#c_tom #c_joe_harper #c_huck">homesickness</rs>. Even Finn the Red-Handed was dreaming of his doorsteps and empty hogsheads.</seg> <seg xml:id="th_567" type="#ethics">But they were all ashamed of their weakness, and none was brave enough to speak his thought</seg>. </p>
+                    <p xml:id="ts-12DFC533-84AC-4B23-9F3C-44FBC0B44639"> <pb xml:id="pb-0FAC2B3F-FE4D-4FA8-BAE6-8FFA6729578A" n="124" facs="media/pages/p124.jpg"/> They found plenty of things to be delighted with, but nothing to be astonished at. They discovered that the island was about three miles long and a quarter of a mile wide, and that the shore it lay closest to was only separated from it by a narrow channel hardly two hundred yards wide. They took a swim about every hour, so it was close upon the middle of the afternoon when they got back to camp. They were too hungry to stop to fish, but they fared sumptuously upon cold <rs type="obRef" subtype="food" ref="#ob_ham" rendition="inScene">ham</rs>, and then threw themselves down in the shade to talk. But the talk soon began to drag, and then died. <seg ana="#childhood">The stillness, the solemnity that brooded in the woods, and the sense of loneliness, began to tell upon the spirits of the boys. They fell to thinking. A sort of undefined longing crept upon them. This took dim shape, presently — it was budding <rs type="emotionsRef" ref="#c_tom #c_joe_harper #c_huck">homesickness</rs>. Even Finn the Red-Handed was dreaming of his doorsteps and empty hogsheads.</seg> <seg xml:id="th_567" type="#ethics">But they were all ashamed of their weakness, and none was brave enough to speak his thought</seg>. </p>
                     <figure xml:id="ill_page_124">
                         <graphic url="media/illustrations/ill_page_124.jpg" rend="full" />
                         <graphic url="media/illustrations/ill_page_c_124.jpg" rend="crop" />
@@ -8192,12 +8190,12 @@
                         <time>x</time>
                     </note>
                     <p xml:id="ts-6D82F260-91A1-4E03-BC93-B512A584917A">
-            <seg ana="#childhood"><rs type="persRef" ref="#c_tom" rendition="inScene">TOM</rs> joined <seg xml:id="th_731" type="#community">the new order of Cadets of Temperance</seg>, being attracted by the showy character of their “ <rs type="obRef" ref="#ob_cadets_regalia" rendition="inScene">regalia</rs>.” He promised to abstain from smoking, chewing, and profanity as long as he remained a member.</seg> Now he found out a new thing — namely, that to promise not to do a thing is the surest way in the world to make a body want to go and do that very thing. <seg ana="#ethics">Tom soon found himself tormented with a desire to drink and swear; the desire grew to be so intense that nothing but the hope of a chance to display himself in his red sash kept him from withdrawing from the order.</seg>
+                        <seg ana="#childhood"><rs type="persRef" ref="#c_tom" rendition="inScene">TOM</rs> joined <seg xml:id="th_731" type="#community">the new order of Cadets of Temperance</seg>, being attracted by the showy character of their “ <rs type="obRef" ref="#ob_cadets_regalia" rendition="inScene">regalia</rs>.” He promised to abstain from smoking, chewing, and profanity as long as he remained a member.</seg> Now he found out a new thing — namely, that to promise not to do a thing is the surest way in the world to make a body want to go and do that very thing. <seg ana="#ethics">Tom soon found himself tormented with a dAfter trying to adapt to a neesire to drink and swear; the desire grew to be so intense that nothing but the hope of a chance to display himself in his red sash kept him from withdrawing from the order.</seg>
             <date>Fourth of July</date> was coming; but he soon gave that up — gave it up before he had worn his shackles over forty-eight hours — and fixed his hopes upon <seg xml:id="th_732" type="#community">
                 <rs type="persRef" ref="#c_judge_fraser" rendition="inScene">old Judge Frazer</rs>, <rs type="persTrait" ref="#c_judge_fraser" corresp="#pov_anonymous">justice of the peace</rs>, who was apparently <pb xml:id="pb-416AB0BD-5596-4611-82C8-4E946992FAB6" n="177" facs="media/pages/p177.jpg"/>on his deathbed and would have a big public funeral, since he was so high an official.</seg>
             <date from="1845-06-23" to="1845-06-27">During three days</date> Tom was deeply concerned about the Judge’s condition and hungry for news of it. Sometimes his hopes ran high — so high that he would venture to get out his regalia and practise <rs type="placeRef" ref="#pl_house"> before the looking-glass</rs>. But the Judge had a most discouraging way of fluctuating. <seg xml:id="th_733" type="#ethics">At last he was pronounced upon the mend — and then convalescent. Tom was disgusted; and felt a sense of injury, too. He handed in his resignation at once — and <date when="1845-06-26">that night</date> the Judge suffered a relapse and died. Tom resolved that he would never trust a man like that again.</seg>
         </p>
-                    <note type="comment">
+                    <note type="comment" subtype="blocknote">
                         <p xml:id="ts-B2FDC4FF-2B90-45C6-B583-E61E9A2FDFF8">Tom joins the Cadets of Temperance so he can wear the red sash and fancy costume. The group must swear to stop cursing, drinking, gambling and any other "bad" vice. Tom can't handle this so he resolves to hang on until Judge Frazier, the justice of the peace, dies, because then he can wear his red sash in the public funeral. When the judge recovers, Tom resigns from the Cadets. The judge suffers a relapse and dies that night.</p>
                     </note>
                     <figure xml:id="ill_page_177">
@@ -13798,8 +13796,9 @@
                         <seg xml:id="th_1067" type="#community">Huck Finn’s wealth and the fact that he was now under the Widow Douglas’s protection introduced him into society — no, dragged him into it, hurled him into it — and his sufferings were almost more than he could bear. The widow’s servants kept him clean and neat, combed and brushed, and they bedded him nightly in unsympathetic sheets that had not one little spot or stain which he could press to his heart and know for a friend. He had to eat with a knife and
                             <pb xml:id="pb-F4795777-42B7-4D7B-B8ED-D0F09AA18B3C" n="270" facs="media/pages/p270.jpg" />fork; he had to use napkin, cup, and plate; he had to learn his book, he had to go to church; he had to talk so properly that speech was become insipid in his mouth; whithersoever he turned, the bars and shackles of civilization shut him in and bound him hand and foot.</seg>
                     </p>
+                    <milestone n="Huck escapes!" xml:id="ch35sc02b" unit="scene" corresp="#pl_st_petersburg" />
                     <p xml:id="ts-94B918A8-E928-4D75-895C-D1EBE41A374A">
-                        <milestone n="Huck escapes!" xml:id="ch35sc02b" unit="scene" corresp="#pl_st_petersburg" />
+                        
                         <note type="mSummary">After trying to adapt to a new environment, Huck goes missing everyone apart from Tom is unable to locate him.</note>
                         <rs type="persRef" ref="#c_huck" rendition="inScene">He</rs> bravely bore his miseries
                         <date>three weeks</date>, and then one day turned up missing. For
