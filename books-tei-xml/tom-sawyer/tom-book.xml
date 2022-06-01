@@ -15217,8 +15217,10 @@
                     <person xml:id="ed_michalis" sex="m" exclude="y" />
                     <person xml:id="ed_lena" sex="f" exclude="y" />
                     
-                    
-                    <!-- RELATIONSHIPS
+
+                </listPerson>
+                
+                <!-- RELATIONSHIPS
                     sources:
                     [TEI Element Relation](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relation.html)
                     [Prosopography Relations](http://wiki.tei-c.org/index.php/Prosopography)
@@ -15232,101 +15234,97 @@
                     Som is cousin of Sid
                     Sid is cousin of tom
                     -->
-                    <listRelation type="relationships">
-                        <!--tom  family-->
-                        <relation type="personal" name="sibling" mutual="#c_tom #c_sid" />
-                        <relation type="personal" name="parent" active="#c_toms_mother" passive="#c_tom #c_sid" />
-                        <relation type="personal" name="cousin" mutual="#c_tom #c_mary #c_sid" />
-                        <relation type="personal" name="nephew" active="#c_tom #c_sid" passive="#c_polly" />
-                        <relation type="personal" name="siblings" mutual="#c_polly #c_toms_mother" />
-                        <relation type="social" name="owner" active="#c_polly" passive="#c_jim" />
-                        <relation type="other" name="owner" active="#c_polly" passive="#c_peter_the_cat" />
-                        <!--tom  important friends-->
-                        <relation type="personal" name="closefriends" mutual="#c_tom #c_huck #c_joe_harper" n="Best Friends" />
-                        <relation type="personal" name="closeFriends" mutual="#c_tom #c_amy_lawrence" />
-                        <relation type="personal" name="closeFriends" mutual="#c_tom #c_becky_thatcher" />
-                        <relation type="social" name="acq" mutual="#c_tom #c_judge_thatcher" />
-                        <relation type="social" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_becky" />
-                        <relation type="personal" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_maid_servant" />
-                        <relation type="personal" name="cousin" mutual="#c_becky #c_jeff_thatcher" />
-                        <relation type="social" name="parent" active="#c_lawyer_thatcher" passive="#c_jeff_thatcher" />
-                        
-                        <relation type="social" name="classmates" mutual="#c_tom #c_ben_rogers #c_jeff_thatcher #c_billy_fisher #c_johnny_miller #c_bob_tanner #c_jim_hollis #c_mary_austin #c_grace_miller #c_sally_rogers #c_susy_harper #c_johnny_baker" />
-                        <relation type="personal" name="enemy" mutual="#c_tom #c_alfred_temple" />
-                        <relation type="personal" name="mother" active="#c_mrs_temple" passive="#c_alfred_temple" />
-                        <relation type="personal" name="mother" active="#" passive="#c_alfred_temple" />
-                        <relation type="personal" name="enemy" active="#c_tom" passive="#c_willie_mufferson" />
-                        <relation type="personal" name="mother" active="#c_mrs_mufferson" passive="#c_willie_mufferson" />
-                        <relation type="personal" name="sibling" mutual="#c_ben_rogers #c_sally_rogers" />
-                        <relation type="personal" name="mother" active="#c_mrs_harper" passive="#c_joe_harper" />
-                        <relation type="personal" name="siblings" mutual="#c_joe_harper #c_susy_harper" />
-                        <relation type="personal" name="siblings" mutual="#c_johnny_miller #c_grace_miller" />
-                        
-                        
-                        <relation type="social" name="acq" mutual="#c_tom #c_mr_walters" />
-                        <relation type="social" name="acq" mutual="#c_tom #_rev_sprague" />
-                        <relation type="social" name="acq" mutual="#c_tom #c_mr_dobbins" />
-                        <relation type="social" name="acq" mutual="#c_tom #c_tavern_keepers_son" />
-                        <relation type="social" name="acq" mutual="#c_doctor" />
-                        <!-- review -->
-                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_robin_hood" />
-                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_guy_of_guisborne" />
-                        <relation type="personal" name="impersonates" active="#c_tom" passive="#c_sheriff_of_nottingham" />
-                        
-                        <!-- huck -->
-                        <relation type="social" name="son" active="#c_huck" passive="#c_pap" />
-                        <relation type="social" name="friend" mutual="#c_huck #c_uncle_jake" />
-                        <relation type="social" name="enemy" mutual="#c_huck #c_mother_hopkins " />
-                        
-                        
-                        <!-- injun -->
-                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_tom " />
-                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_huck " />
-                        <relation type="personal" name="gravediggers" active="#c_injun_joe #c_muff_potter #c_dr_robinson" passive="#c_hoss_williams" />
-                        <relation type="personal" name="accomplices" mutual="#c_injun_joe #c_ragged_man" />
-                        <relation type="personal" name="married" mutual="#c_ragged_man #c_nance" />
-                        <relation type="personal" name="enemy" mutual="#c_injun_joe #c_muff_potter " />
-                        <relation type="social" name="murders" active="#c_injun_joe" passive="#c_dr_robinson" />
-                        <!-- muff -->
-                        <relation type="personal" name="friend" mutual="#c_muff_potter #c_tom #c_huck " />
-                        <relation type="personal" name="witness" active="#c_tom" passive="#c_muff_potter" />
-                        <relation type="personal" name="defends" active="#c_muffs_counsel" passive="#c_muff_potter"/>
-                        <relation type="social" name="arrests" active="#c_the_sherrif" passive="#c_muff_potter"/>
-                        <!-- the welshman -->
-                        <relation type="social" name="parent" active="#c_the_welchman" passive="#c_welchmans_sons" />
-                        
-                        <!-- widow -->
-                        <relation type="social" name="acq" mutual="#c_widow_douglas #c_tom #c_huck #c_the_welchman" />
-                        
-                        
-                        
-                        <relation type="personal" name="guardian" active="#c_widow_douglas" passive="#c_huck" />
-                        <relation type="social" name="friends" mutual="#c_the_welchman #c_huck" />
-                        <relation type="personal" name="father" active="#c_judge_thatcher" passive="#c_becky" />
-                        <relation type="personal" name="mother" active="#c_mrs_thatcher" passive="#c_becky" />
-                        <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_lawyer_thatcher" />
-                        <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_jeff_thatcher" />
-                        <relation type="personal" name="owner" active="#c_judge_thatcher" passive="#c_maid_servant" />
-                        
-                        
-                    </listRelation>
-   
-                        
-                        
+                
+                
+                
+                
+                <listRelation type="relationships">
+                    <!--tom  family-->
+                    <relation type="personal" name="sibling" mutual="#c_tom #c_sid" />
+                    <relation type="personal" name="parent" active="#c_toms_mother" passive="#c_tom #c_sid" />
+                    <relation type="personal" name="cousin" mutual="#c_tom #c_mary #c_sid" />
+                    <relation type="personal" name="nephew" active="#c_tom #c_sid" passive="#c_polly" />
+                    <relation type="personal" name="siblings" mutual="#c_polly #c_toms_mother" />
+                    <relation type="social" name="owner" active="#c_polly" passive="#c_jim" />
+                    <relation type="other" name="owner" active="#c_polly" passive="#c_peter_the_cat" />
+                    <!--tom  important friends-->
+                    <relation type="personal" name="closefriends" mutual="#c_tom #c_huck #c_joe_harper" n="Best Friends" />
+                    <relation type="personal" name="closeFriends" mutual="#c_tom #c_amy_lawrence" />
+                    <relation type="personal" name="closeFriends" mutual="#c_tom #c_becky_thatcher" />
+                    <relation type="social" name="acq" mutual="#c_tom #c_judge_thatcher" />
+                    <relation type="social" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_becky" />
+                    <relation type="personal" name="parent" active="#c_judge_thatcher #c_mrs_thatcher" passive="#c_maid_servant" />
+                    <relation type="personal" name="cousin" mutual="#c_becky #c_jeff_thatcher" />
+                    <relation type="social" name="parent" active="#c_lawyer_thatcher" passive="#c_jeff_thatcher" />
+                    
+                    <relation type="social" name="classmates" mutual="#c_tom #c_ben_rogers #c_jeff_thatcher #c_billy_fisher #c_johnny_miller #c_bob_tanner #c_jim_hollis #c_mary_austin #c_grace_miller #c_sally_rogers #c_susy_harper #c_johnny_baker" />
+                    <relation type="personal" name="enemy" mutual="#c_tom #c_alfred_temple" />
+                    <relation type="personal" name="mother" active="#c_mrs_temple" passive="#c_alfred_temple" />
+                    <relation type="personal" name="mother" active="#" passive="#c_alfred_temple" />
+                    <relation type="personal" name="enemy" active="#c_tom" passive="#c_willie_mufferson" />
+                    <relation type="personal" name="mother" active="#c_mrs_mufferson" passive="#c_willie_mufferson" />
+                    <relation type="personal" name="sibling" mutual="#c_ben_rogers #c_sally_rogers" />
+                    <relation type="personal" name="mother" active="#c_mrs_harper" passive="#c_joe_harper" />
+                    <relation type="personal" name="siblings" mutual="#c_joe_harper #c_susy_harper" />
+                    <relation type="personal" name="siblings" mutual="#c_johnny_miller #c_grace_miller" />
                     
                     
-                 
+                    <relation type="social" name="acq" mutual="#c_tom #c_mr_walters" />
+                    <relation type="social" name="acq" mutual="#c_tom #_rev_sprague" />
+                    <relation type="social" name="acq" mutual="#c_tom #c_mr_dobbins" />
+                    <relation type="social" name="acq" mutual="#c_tom #c_tavern_keepers_son" />
+                    <relation type="social" name="acq" mutual="#c_doctor" />
+                    <!-- review -->
+                    <relation type="personal" name="impersonates" active="#c_tom" passive="#c_robin_hood" />
+                    <relation type="personal" name="impersonates" active="#c_tom" passive="#c_guy_of_guisborne" />
+                    <relation type="personal" name="impersonates" active="#c_tom" passive="#c_sheriff_of_nottingham" />
                     
-                </listPerson>
+                    <!-- huck -->
+                    <relation type="social" name="son" active="#c_huck" passive="#c_pap" />
+                    <relation type="social" name="friend" mutual="#c_huck #c_uncle_jake" />
+                    <relation type="social" name="enemy" mutual="#c_huck #c_mother_hopkins " />
+                    
+                    
+                    <!-- injun -->
+                    <relation type="personal" name="enemy" mutual="#c_injun_joe #c_tom " />
+                    <relation type="personal" name="enemy" mutual="#c_injun_joe #c_huck " />
+                    <relation type="personal" name="gravediggers" active="#c_injun_joe #c_muff_potter #c_dr_robinson" passive="#c_hoss_williams" />
+                    <relation type="personal" name="accomplices" mutual="#c_injun_joe #c_ragged_man" />
+                    <relation type="personal" name="married" mutual="#c_ragged_man #c_nance" />
+                    <relation type="personal" name="enemy" mutual="#c_injun_joe #c_muff_potter " />
+                    <relation type="social" name="murders" active="#c_injun_joe" passive="#c_dr_robinson" />
+                    <!-- muff -->
+                    <relation type="personal" name="friend" mutual="#c_muff_potter #c_tom #c_huck " />
+                    <relation type="personal" name="witness" active="#c_tom" passive="#c_muff_potter" />
+                    <relation type="personal" name="defends" active="#c_muffs_counsel" passive="#c_muff_potter"/>
+                    <relation type="social" name="arrests" active="#c_the_sherrif" passive="#c_muff_potter"/>
+                    <!-- the welshman -->
+                    <relation type="social" name="parent" active="#c_the_welchman" passive="#c_welchmans_sons" />
+                    
+                    <!-- widow -->
+                    <relation type="social" name="acq" mutual="#c_widow_douglas #c_tom #c_huck #c_the_welchman" />
+                    
+                    
+                    
+                    <relation type="personal" name="guardian" active="#c_widow_douglas" passive="#c_huck" />
+                    <relation type="social" name="friends" mutual="#c_the_welchman #c_huck" />
+                    <relation type="personal" name="father" active="#c_judge_thatcher" passive="#c_becky" />
+                    <relation type="personal" name="mother" active="#c_mrs_thatcher" passive="#c_becky" />
+                    <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_lawyer_thatcher" />
+                    <relation type="personal" name="relative" mutual="#c_judge_thatcher #c_jeff_thatcher" />
+                    <relation type="personal" name="owner" active="#c_judge_thatcher" passive="#c_maid_servant" />
+                    
+                    
+                </listRelation>
             </div>
             
             <!-- PLACES -->
             <div type="list_places" xml:id="places">
 
                 <head>
-                    <label>
+                    
                         List of places:
-                    </label>
+                    
                     Places and locations mentioned in the book.
                 </head>
                 <listPlace>
@@ -15496,7 +15494,7 @@
             <!-- OBJECTS -->
             <div type="listObject-container" xml:id="objects">
                 <head>
-                    <label>List of Objects:</label> A comprehensive list of objects mentioned in the book.
+                    List of Objects: A comprehensive list of objects mentioned in the book.
                 </head>
                 <list type="objects">
                     <item xml:id="ob_spectacles">
