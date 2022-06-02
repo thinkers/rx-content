@@ -26,8 +26,8 @@
 				
 					<head type="h2">Imprint</head>
 								
-				<p>This particular ebook is based on a transcription produced for <ref source="https://www.gutenberg.org/ebooks/27780">Project Gutenberg</ref> and on digital scans available at the <ref source="https://archive.org/details/treasislandyork00stev">Internet Archive</ref>.</p>
-				<p>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the <ref source="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal Public Domain Dedication</ref></p>
+				<p>This particular ebook is based on a transcription produced for <ref target="https://www.gutenberg.org/ebooks/27780">Project Gutenberg</ref> and on digital scans available at the <ref target="https://archive.org/details/treasislandyork00stev">Internet Archive</ref>.</p>
+				<p>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal Public Domain Dedication</ref></p>
 			</div>
 			<div xml:id="epigraph" type="epigraph">
 				<head type="h2">To the Hesitating Purchaser</head>
@@ -1814,7 +1814,7 @@
 				
 				<p><hi rend="italics">Treasure Island</hi><lb />
 				was written in 1881 by<lb />
-				<ref source="https://en.wikipedia.org/wiki/Robert_Louis_Stevenson">Robert Louis Stevenson</ref>.</p>
+				<ref target="https://en.wikipedia.org/wiki/Robert_Louis_Stevenson">Robert Louis Stevenson</ref>.</p>
 			</div>
 			
 		</body>
