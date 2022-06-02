@@ -1,142 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en-GB" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/" xml:lang="en-GB">
-	<head>
-		<title>Frankenstein</title>
-		
-	</head>
-	<body>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
 		<section id="titlepage" epub:type="titlepage frontmatter">
 			<h1 epub:type="title">Frankenstein</h1>
 			<p>By <b epub:type="z3998:personal-name z3998:author">Mary Shelley</b>.</p>
 		</section>
-		<nav data-role="toc" id="toc" epub:type="toc">
-			<h2 epub:type="title">Table of Contents</h2>
-			<ol>
-				<li>
-					<a href="#titlepage">Titlepage</a>
-				</li>
-				<li>
-					<a href="#imprint">Imprint</a>
-				</li>
-				<li>
-					<a href="#introduction">Introduction</a>
-				</li>
-				<li>
-					<a href="#preface">Preface</a>
-				</li>
-				<li>
-					<a href="#dedication">Dedication</a>
-				</li>
-				<li>
-					<a href="#epigraph">Epigraph</a>
-				</li>
-				<li>
-					<a href="#halftitlepage">Frankenstein</a>
-					<ol>
-						<li>
-							<a href="#letter-1">Letter <span epub:type="z3998:roman">I</span></a>
-						</li>
-						<li>
-							<a href="#letter-2">Letter <span epub:type="z3998:roman">II</span></a>
-						</li>
-						<li>
-							<a href="#letter-3">Letter <span epub:type="z3998:roman">III</span></a>
-						</li>
-						<li>
-							<a href="#letter-4">Letter <span epub:type="z3998:roman">IV</span></a>
-						</li>
-						<li>
-							<a href="#chapter-1">Chapter <span epub:type="z3998:roman">I</span></a>
-						</li>
-						<li>
-							<a href="#chapter-2">Chapter <span epub:type="z3998:roman">II</span></a>
-						</li>
-						<li>
-							<a href="#chapter-3">Chapter <span epub:type="z3998:roman">III</span></a>
-						</li>
-						<li>
-							<a href="#chapter-4">Chapter <span epub:type="z3998:roman">IV</span></a>
-						</li>
-						<li>
-							<a href="#chapter-5">Chapter <span epub:type="z3998:roman">V</span></a>
-						</li>
-						<li>
-							<a href="#chapter-6">Chapter <span epub:type="z3998:roman">VI</span></a>
-						</li>
-						<li>
-							<a href="#chapter-7">Chapter <span epub:type="z3998:roman">VII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-8">Chapter <span epub:type="z3998:roman">VIII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-9">Chapter <span epub:type="z3998:roman">IX</span></a>
-						</li>
-						<li>
-							<a href="#chapter-10">Chapter <span epub:type="z3998:roman">X</span></a>
-						</li>
-						<li>
-							<a href="#chapter-11">Chapter <span epub:type="z3998:roman">XI</span></a>
-						</li>
-						<li>
-							<a href="#chapter-12">Chapter <span epub:type="z3998:roman">XII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-13">Chapter <span epub:type="z3998:roman">XIII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-14">Chapter <span epub:type="z3998:roman">XIV</span></a>
-						</li>
-						<li>
-							<a href="#chapter-15">Chapter <span epub:type="z3998:roman">XV</span></a>
-						</li>
-						<li>
-							<a href="#chapter-16">Chapter <span epub:type="z3998:roman">XVI</span></a>
-						</li>
-						<li>
-							<a href="#chapter-17">Chapter <span epub:type="z3998:roman">XVII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-18">Chapter <span epub:type="z3998:roman">XVIII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-19">Chapter <span epub:type="z3998:roman">XIX</span></a>
-						</li>
-						<li>
-							<a href="#chapter-20">Chapter <span epub:type="z3998:roman">XX</span></a>
-						</li>
-						<li>
-							<a href="#chapter-21">Chapter <span epub:type="z3998:roman">XXI</span></a>
-						</li>
-						<li>
-							<a href="#chapter-22">Chapter <span epub:type="z3998:roman">XXII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-23">Chapter <span epub:type="z3998:roman">XXIII</span></a>
-						</li>
-						<li>
-							<a href="#chapter-24">Chapter <span epub:type="z3998:roman">XXIV</span></a>
-							<ol>
-								<li>
-									<a href="#walton-in-continuation">Walton, <i>in Continuation</i></a>
-								</li>
-							</ol>
-						</li>
-					</ol>
-				</li>
-				<li>
-					<a href="#endnotes">Endnotes</a>
-				</li>
-				<li>
-					<a href="#colophon">Colophon</a>
-				</li>
-				<li>
-					<a href="#uncopyright">Uncopyright</a>
-				</li>
-			</ol>
-		</nav>
-		
 		<section id="preface" epub:type="preface frontmatter z3998:non-fiction">
 			<h2 epub:type="title">Preface</h2>
 			<p>The event on which this fiction is founded, has been supposed, by <abbr>Dr.</abbr> Darwin, and some of the physiological writers of Germany, as not of impossible occurrence. I shall not be supposed as according the remotest degree of serious faith to such an imagination; yet, in assuming it as the basis of a work of fancy, I have not considered myself as merely weaving a series of supernatural terrors. The event on which the interest of the story depends is exempt from the disadvantages of a mere tale of spectres or enchantment. It was recommended by the novelty of the situations which it develops; and, however impossible as a physical fact, affords a point of view to the imagination for the delineating of human passions more comprehensive and commanding than any which the ordinary relations of existing events can yield.</p>
@@ -1255,4 +1140,5 @@
 			
 		</section>
 	</body>
-</html>
+  </text>
+</TEI>

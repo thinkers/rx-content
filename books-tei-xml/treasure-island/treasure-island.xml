@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title></title>
-    </head>
-	<body>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
 			<section id="titlepage" xmlns:epub="http://www.idpf.org/2007/ops" epub:type="titlepage frontmatter">
 				<h1 epub:type="title">Treasure Island</h1>
 				<p>By <b epub:type="z3998:personal-name z3998:author">Robert Louis Stevenson</b>.</p>
@@ -1808,6 +1821,5 @@
 			</section>
 			
 		</body>
-
-
-</html>
+  </text>
+</TEI>

@@ -1,60 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en-GB" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/" xml:lang="en-GB">
-	<head>
-		<title>The Strange Case of Dr. Jekyll and Mr. Hyde</title>
-		
-		
-	</head>
-	<body>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
 		<section id="titlepage" epub:type="titlepage frontmatter">
 			<h1 epub:type="title">The Strange Case of Dr. Jekyll and Mr. Hyde</h1>
 			<p>By <b epub:type="z3998:personal-name z3998:author">Robert Louis Stevenson</b>.</p>
 		</section>
-		<nav id="toc" epub:type="toc">
-			<h2 epub:type="title">Table of Contents</h2>
-			<ol>
-				<li>
-					<a href="#titlepage">Titlepage</a>
-				</li>
-				<li>
-					<a href="#imprint">Imprint</a>
-				</li>
-				<li>
-					<a href="#chapter-1">Story of the Door</a>
-				</li>
-				<li>
-					<a href="#chapter-2">Search for <abbr>Mr.</abbr> Hyde</a>
-				</li>
-				<li>
-					<a href="#chapter-3"><abbr>Dr.</abbr> Jekyll Was Quite at Ease</a>
-				</li>
-				<li>
-					<a href="#chapter-4">The Carew Murder Case</a>
-				</li>
-				<li>
-					<a href="#chapter-5">Incident of the Letter</a>
-				</li>
-				<li>
-					<a href="#chapter-6">Incident of <abbr>Dr.</abbr> Lanyon</a>
-				</li>
-				<li>
-					<a href="#chapter-7">Incident at the Window</a>
-				</li>
-				<li>
-					<a href="#chapter-8">The Last Night</a>
-				</li>
-				<li>
-					<a href="#chapter-9"><abbr>Dr.</abbr> Lanyon’s Narrative</a>
-				</li>
-				<li>
-					<a href="#chapter-10">Henry Jekyll’s Full Statement of the Case</a>
-				</li>
-				<li>
-					<a href="#colophon">Colophon</a>
-				</li>
-			</ol>
-		</nav>
 		<section id="imprint" epub:type="imprint frontmatter">
 			<header>
 				<h2 epub:type="title">Imprint</h2>
@@ -458,4 +425,5 @@
 			<p>copyright text goes here</p>
 		</section>
 	</body>
-</html>
+  </text>
+</TEI>
