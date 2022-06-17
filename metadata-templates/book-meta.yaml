@@ -1,0 +1,22 @@
+# Παράδειγμα βιβλίου
+title:
+- type: main # κύριος τίτλος
+  text: book title goes here # κείμενο τίτλου
+- type: subtitle # υπότιτλος (παν υπάρχει)
+  text: subtitle goes here 
+creator:
+- role: author # ρόλος π.χ. συγγραφέας, επιμελητής μεταφραστής
+  firstName: name goes here #όνομα
+  middleName: middle name goes here #επώνυμο 
+  lastName: last name goes here
+identifier: # αναγνωριστικό
+- scheme: ISBN
+  text: isbn:978-618-203-097-4
+edition: 1 # αριθμός έκδοσης  
+publisher: publisher name goes here # όνομα εκδότης (thinking ή Π.Ν. ΣΑΚΚΟΥΛΑΣ)
+rights: Copyright © 2022 # κείμενο πνευματικών δικαιωμάτων
+publication-date: ΥΥΥΥ-MM-DD # έτος έκδοσης π.χ. 2022-02-23
+lang: el # κωδικός γλώσσας ISO
+description: Σύντομη περιγραφή του βιβλίου
+cover-image: cover.jpg # όνομα αρχείου εξωφύλλου
+tags: [tag1, tag2, tag3, tag4. tag5]
