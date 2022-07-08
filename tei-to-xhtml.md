@@ -1,40 +1,70 @@
+---
+Tags: edk serialisation projects/doing conversion
+---
+
+
 ### TEI to XHTML conversion
 
-- add exlude attribute to all `note` elements they should not appear by default
+> [!IMPORTANT] sync this file 
+> ```bash
+rsync -vgloptruc ~/_projects/akb/conversion-tei-to-xhtml.md ~/_projects/rx-content/tei-to-xhtml.md
+
+
+## PENDINGS
+- [ ] read subtype="block" to all backmatter notes
+
+
+The following is a list of transformations required to convert a semantically encoded TEI XML Book to XHTML5
+
+A mapping is available in GSheets here: https://docs.google.com/spreadsheets/d/1pnjGpiDAw6QF7uTsizyIkB9gTOo6rEDrcxz_Qr7aFEI/edit#gid=0
+
+
+- add exclude attribute to all `note` elements they should not appear by default
 - maybe add exclude attribute on all reg element
 
 
-maybe @type should remain data-type and not be converted to data-role
+==maybe @type should remain data-type and not be converted to data-role==
 
 #### attributes
-- [x] url="" → src=""
-- [x] xml:id="" → id=""
-- [x] type="" → data-type=""
-- [x] subdata-type → data-subdata-type
-- [x] n="" → data-n=""
-- [x] exclude="" → data-exclude=""
-- [x] facs="" → data-facs=""
-- [x] when → data-when
-- [x] when-custom → data-when-custom
-- [x] corresp → data-corresp
-- [x] rend → data-rend
-- [x] who → data-who
-- [x] ref → data-ref
-- [x] ana → data-ana
-- [x] aloud → data-aloud
-- [x] unit → data-unit
-- [x] quantity → data-quantity
-- [x] resp → data-resp
-- [x] rendition → data-rendition
-- [x] next → data-next
-- [x] from → data-from
-- [x] to → data-to
+- [ ] url="" → src=""
+- [ ] xml:id="" → id=""
+- [ ] type="" → data-type=""
+- [ ] xml:lang → lang
+- [ ] subdata-type → data-subdata-type
+- [ ] n="" → data-n=""
+- [ ] exclude="" → data-exclude=""
+- [ ] facs="" → data-facs=""
+- [ ] ed → data-ed
+- [ ] dur → data-dur
+- [ ] when → data-when
+- [ ] when-custom → data-when-custom
+- [ ] corresp → data-corresp
+- [ ] rend → data-rend
+- [ ] who → data-who
+- [ ] ref → data-ref
+- [ ] ana → data-ana
+- [ ] aloud → data-aloud
+- [ ] unit → data-unit
+- [ ] quantity → data-quantity
+- [ ] resp → data-resp
+- [ ] rendition → data-rendition
+- [ ] next → data-next
+- [ ] from → data-from
+- [ ] to → data-to
+- [ ] full → data-full
+- [ ] ?anchored → data-anchored
 - [ ] target → data-target
-- [x] source → data-source
+- [ ] source → data-source
 - [ ] sex → data-sex
 - [ ] age → data-age
 - [ ] sort → data-sort
-- [ ] erase all `<NO_NAMESPACE>`
+- [ ] notAfter-custom → data-notAfter-custom
+- [ ] notBefore-custom → data-notBefore-custom
+- [ ] name → data-name
+- [ ] mutual → data-mutual
+- [ ] active → data-active
+- [ ] passive → data-passive
+- [ ] copyOf → data-copyOf
 - [ ] xml:base ?? REVIEW
 
 
@@ -44,71 +74,83 @@ maybe @type should remain data-type and not be converted to data-role
 #### elements
 before you perform any element change make sure you add it as an atrribute using XML refactoring `Add/Change atrribute`
 
-- [x] head → h1
-- [x] milestone → `<p data-was="milestone">`
-- [ ] note → `<div data-was="note">` ATTENTION could be either a span or a div we must include in TEI XML e.g. a subtype inline| block to distinquish them
+- [ ] head → h1
+- [ ] hi → span data-was="hi"
+- [ ] milestone → `<p data-was="milestone">`
+- [ ] note[@sutype="blocknote"] → `<div data-was="blocknote data-subtype="blocknote">`
+- [ ] note →ATTENTION could be either a span or a div we must include in TEI XML e.g. a `subtype inline| block` to distinquish them, in the backmatter all `note` elements should be of block subtype (also add in schematron)
+	- [ ] note → `<span data-was="note">` 
+	- [ ] note[@subtype="block"] → div data-was="note" data-subtype="block"
 - [ ] view → `<span data-was="view">`
-- [x] date → `<span data-was="date">`
-- [x] time → `<span data-was="time">`
-- [x] emph → `<em data-was="emph">`
-- [x] anchor → `<p data-was="anchor">`
-- [x] said  → `<span data-was="said">` (see: [[#Said]])
-	- [x] distinct `<span data-was="distinct"`
-		- [x] choice → `<span data-was="choice">`
-			- [x] orig → `<span data-was="orig">`
-			- [x] reg → `<span data-was="reg">`
-- [x] seg → `<span data-was="seg"`
-- [x] rs → `<span data-was="rs"`
-- [x] pb → `<span data-was="pb"> 
-- [x] figure → figure  (see: [[#Figures]])
-	- [x] graphic → `<img data-was="graphic">`
-	- [x] figDesc > `<figcaption data-was="figDesc">`
-- [ ] l → ???
+- [ ] date → `<span data-was="date">`
+- [ ] time → `<span data-was="time">`
+- [ ] emph → `<em data-was="emph">`
+- [ ] anchor → `<span data-was="anchor">`
+- [ ] said  → `<span data-was="said">` (see: [[#Said]])
+	- [ ] distinct `<span data-was="distinct"`
+		- [ ] choice → `<span data-was="choice">`
+			- [ ] orig → `<span data-was="orig">`
+			- [ ] reg → `<span data-was="reg">`
+- [ ] seg → `<span data-was="seg"`
+- [ ] rs → `<span data-was="rs"`
+- [ ] pb → `<span data-was="pb"> 
+- [ ] figure → figure  (see: [[#Figures]])
+	- [ ] graphic → `<img data-was="graphic">`
+	- [ ] figDesc > `<figcaption data-was="figDesc">`
+- [ ] quote → `<span data-was="quote"`
+- [ ] lg → `<div data-was="lg">`
+- [ ] l → `<p data-was="l">`
 - [ ] measure → `<span data-was="measure"?>`
+- [ ] address → div data-was="address"
+- [ ] street → p data-was="street"
+- [ ] geo → p data-was="geo"
+- [ ] lb → br
+- [ ] foreign [@xml:lang] → span[@lang]
+- [ ] blockquote → quote
 
 _BACKMATTER_
+
+ATT: backmater has to be moved within html body after conversion to html
 - [ ] back → `<div data-was="back">`
 - [ ] list → `<ul> data-was="list">`
 	- [ ] item → `<li data-was="item"`
 
-Person list
-- [ ] listPerson → `<ul data-was="listPerson">`
-	- [ ] person 
-		- [ ] persName
-			- [ ] rolename
-			- [ ] forename
-			- [ ] surname
-		- [ ] birth
-		- [ ] death
-		- [ ] nationality
-		- [ ] occupation
-		- [ ] residence
-			- [ ] placeName
-		- [ ] trait
-			- [ ] label
-			- [ ] desc
-		- [ ] name
+ LISTS
+- [x] listPerson → `<ul data-was="listPerson">`
+	- [x] person → `<li data-was="person">`
+		- [x] persName → div data-was="persName"
+			- [x] rolename → p data-was="rolename"
+			- [x] forename → p data-was="forename"
+			- [x] surname → p data-was="surname"
+			- [x] genName →p data-was="genName"
+		- [x] birth → p data-was="birth"
+		- [x] death → p data-was="death"
+		- [x] faith → p data-was="faith"
+		- [x] nationality
+		- [x] occupation → p data-was="occupation"
+		- [ ] state → div data-was="state"
+		- [x] residence → div data-was="residence"
+		- [x] listPlace → ul data-was="listPlace"
+		- [x] place → li data-was="place"
+			- [x] placeName → p data-was="placeName" (also appears inside `residence` element)
+		- [ ] location data-was="location"
+		- [ ] trait → div data-was="trait"
+		- [ ] label → p data-was="label"
+		- [x] desc →  p data-was="desc"
+		- [x] name → p  data-was="name"
 
 
-Relationships
-- [  ] listRelation
-	- [  ] relation
-
-
-
-Places
-
-Objects Lists
+List Relationships
+- [x] listRelation → ul data-was="listRelation" data-type="relationships"
+	- [x] relation → li data-was="relation"
 
 Interpretation
-
-
-
-
+- [x] interpGrp → ul data-was="interpGrp"
+- [x] interp → li data-was="interp"
 
 #### Post pass
 some data-n attributes will be used to create aria labels for instance
-- within //span[@data-was="pagebreak"] there is a an  `@data-n` attribute whos value should be used to create an `aria-label` of the same value
+- within //span[@data-was="pagebreak"] there is a an  `@data-n` attribute whose value should be used to create an `aria-label` of the same value
 
 
 
@@ -202,9 +244,6 @@ Blockquotes
 Notes
 
 
-
-
-
 for the prototype version let's not have to worry about the head metadata much (we can add them manually for each book) and we also have the main fields already created as custom fields in woo commerce products
 
 
@@ -214,23 +253,7 @@ as a general rule since we want to retain the information of the initial encodin
 - all their attributes (except xml:id) get converter to a custom `data-*` attribute and retain their attribute value
 
 
-Τα στοιχεία που επιλέγουμε να καταγράψουμε για έναν τίτλο περιεχομένου είναι τα εξής:
 
-
--   Τίτλος 
--   Υπότιτλος
--   Συγγραφέας
--   Αριθμός έκδοσης
--   Αριθμός τεύχους (για περιοδικά)
--   Αριθμός σελίδων 
--   Εκδότης
--   Έτος έκδοσης
--   ISBN (για βιβλία)
--   Πνευματικά Δικαιώματα
--   Πληροφορίες για την πηγή του περιεχομένου
--   Γλώσσα
--   Περιγραφή (σύντομη περιγραφή)
--   Θεματικές ετικέτες (προσδιορίζουν την θεματολογία του πόρου)
     
 --- 
 

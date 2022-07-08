@@ -1,0 +1,21 @@
+# Παράδειγμα περιοδικού
+title:
+- type: main # κύριος τίτλος (Ποινικά Χρονικά ή Χρονικά Ιδιωτικου Δικαιου)
+  text: book title goes here # κείμενο τίτλου
+creator:
+- role: author # ρόλος π.χ. διευθυντής, αρχισυντάκτης περιοδικού
+  firstName: name goes here #όνομα
+  middleName: middle name goes here #επώνυμο 
+  lastName: last name goes here
+identifier: # αναγνωριστικό
+- scheme: ISSN
+  text: issn:2459-4040
+issue: 1 # αριθμός τεύχους
+month: add month here # μήνας
+publisher: publisher name goes here # όνομα εκδότης (Π.Ν. ΣΑΚΚΟΥΛΑΣ)
+rights: Copyright © 2022 # κείμενο πνευματικών δικαιωμάτων
+publication-date: ΥΥΥΥ-MM # έτος/μήνας έκδοσης π.χ. 2022-02
+lang: el # κωδικός γλώσσας ISO
+description: Σύντομη περιγραφή του περιοδικού
+cover-image: cover.jpg # όνομα αρχείου εξωφύλλου
+tags: [tag1, tag2, tag3, tag4. tag5]
