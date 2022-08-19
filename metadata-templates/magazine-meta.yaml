@@ -16,6 +16,6 @@ publisher: publisher name goes here # όνομα εκδότης (Π.Ν. ΣΑΚΚ
 rights: Copyright © 2022 # κείμενο πνευματικών δικαιωμάτων
 publication-date: ΥΥΥΥ-MM # έτος/μήνας έκδοσης π.χ. 2022-02
 lang: el # κωδικός γλώσσας ISO
-description: Σύντομη περιγραφή του περιοδικού
-cover-image: cover.jpg # όνομα αρχείου εξωφύλλου
+desc-abstract: Σύντομη περιγραφή του περιοδικού
 tags: [tag1, tag2, tag3, tag4. tag5]
+cover-image: cover.jpg # όνομα αρχείου εξωφύλλου

@@ -3,7 +3,8 @@ title:
 - type: main # κύριος τίτλος
   text: book title goes here # κείμενο τίτλου
 - type: subtitle # υπότιτλος (παν υπάρχει)
-  text: subtitle goes here 
+  text: subtitle goes here
+edition-number: 1 # αριθμός έκδοσης
 creator:
 - role: author # ρόλος π.χ. συγγραφέας, επιμελητής μεταφραστής
   firstName: name goes here #όνομα
@@ -17,6 +18,6 @@ publisher: publisher name goes here # όνομα εκδότης (thinking ή Π.
 rights: Copyright © 2022 # κείμενο πνευματικών δικαιωμάτων
 publication-date: ΥΥΥΥ-MM-DD # έτος έκδοσης π.χ. 2022-02-23
 lang: el # κωδικός γλώσσας ISO
-description: Σύντομη περιγραφή του βιβλίου
-cover-image: cover.jpg # όνομα αρχείου εξωφύλλου
+desc-abstract: Σύντομη περιγραφή του βιβλίου
 tags: [tag1, tag2, tag3, tag4. tag5]
+cover-image: cover.jpg # όνομα αρχείου εξωφύλλου
