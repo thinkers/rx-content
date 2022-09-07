@@ -30,10 +30,12 @@
                     <name>thinking lpc</name>
                     <email>info@thinking.gr</email>
                 </distributor>
+                <publisher>thinking lpc</publisher>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License
                     </licence>
                 </availability>
+                <date when="2022">2022</date>
             </publicationStmt>
             <sourceDesc>
                 <!-- msDesc:περιγραφή αρχικού έντυπου βιβλίου -->
