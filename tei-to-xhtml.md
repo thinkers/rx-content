@@ -1,5 +1,5 @@
 ---
-Tags: edk serialisation projects/doing conversion
+Tags: edk encoding serialisation rx projects/doing convert conversions
 ---
 
 
@@ -13,7 +13,6 @@ rsync -vgloptruc ~/_projects/akb/conversion-tei-to-xhtml.md ~/_projects/rx-conte
 ## PENDINGS
 - [ ] read subtype="block" to all backmatter notes
 
-
 The following is a list of transformations required to convert a semantically encoded TEI XML Book to XHTML5
 
 A mapping is available in GSheets here: https://docs.google.com/spreadsheets/d/1pnjGpiDAw6QF7uTsizyIkB9gTOo6rEDrcxz_Qr7aFEI/edit#gid=0
@@ -24,48 +23,49 @@ A mapping is available in GSheets here: https://docs.google.com/spreadsheets/d/1
 
 
 ==maybe @type should remain data-type and not be converted to data-role==
-
+==ADD A DATA ROLE CHAPTER IF IT DOES NOT EXIST==
 #### attributes
-- [ ] url="" → src=""
-- [ ] xml:id="" → id=""
-- [ ] type="" → data-type=""
-- [ ] xml:lang → lang
+- [x] url="" → src=""
+- [x] xml:id="" → id=""
+- [x] type="" → data-type=""
+- [x] xml:lang → lang
 - [ ] subdata-type → data-subdata-type
-- [ ] n="" → data-n=""
-- [ ] exclude="" → data-exclude=""
-- [ ] facs="" → data-facs=""
-- [ ] ed → data-ed
-- [ ] dur → data-dur
-- [ ] when → data-when
-- [ ] when-custom → data-when-custom
-- [ ] corresp → data-corresp
-- [ ] rend → data-rend
-- [ ] who → data-who
-- [ ] ref → data-ref
-- [ ] ana → data-ana
-- [ ] aloud → data-aloud
-- [ ] unit → data-unit
-- [ ] quantity → data-quantity
-- [ ] resp → data-resp
-- [ ] rendition → data-rendition
-- [ ] next → data-next
-- [ ] from → data-from
-- [ ] to → data-to
-- [ ] full → data-full
-- [ ] ?anchored → data-anchored
-- [ ] target → data-target
-- [ ] source → data-source
-- [ ] sex → data-sex
-- [ ] age → data-age
-- [ ] sort → data-sort
-- [ ] notAfter-custom → data-notAfter-custom
-- [ ] notBefore-custom → data-notBefore-custom
-- [ ] name → data-name
-- [ ] mutual → data-mutual
-- [ ] active → data-active
-- [ ] passive → data-passive
-- [ ] copyOf → data-copyOf
-- [ ] xml:base ?? REVIEW
+- [x] n="" → data-n=""
+- [x] exclude="" → data-exclude=""
+- [x] facs="" → data-facs=""
+- [x] ed → data-ed
+- [x] dur → data-dur
+- [x] when → data-when
+- [x] when-custom → data-when-custom
+- [x] corresp → data-corresp
+- [x] rend → data-rend
+- [x] who → data-who
+- [x] ref → data-ref
+- [x] ana → data-ana
+- [x] aloud → data-aloud
+- [x] unit → data-unit
+- [x] quantity → data-quantity
+- [x] resp → data-resp
+- [x] rendition → data-rendition
+- [x] next → data-next
+- [x] from → data-from
+- [x] to → data-to
+- [x] full → data-full
+- [x] ?anchored → data-anchored
+- [x] target → data-target
+- [x] source → data-source
+- [x] sex → data-sex
+- [x] age → data-age
+- [x] sort → data-sort
+- [x] notAfter-custom → data-notAfter-custom
+- [x] notBefore-custom → data-notBefore-custom
+- [x] name → data-name
+- [x] mutual → data-mutual
+- [x] active → data-active
+- [x] passive → data-passive
+- [x] copyOf → data-copyOf
+- [x] xml:base ?? REVIEW\
+- [ ] key → data-key
 
 
 ---
@@ -103,10 +103,17 @@ before you perform any element change make sure you add it as an atrribute using
 - [ ] measure → `<span data-was="measure"?>`
 - [ ] address → div data-was="address"
 - [ ] street → p data-was="street"
-- [ ] geo → p data-was="geo"
+- [ ] geo → span data-was="geo"
 - [ ] lb → br
 - [ ] foreign [@xml:lang] → span[@lang]
 - [ ] blockquote → quote
+
+
+_RIGHTS_
+- [ ] availability → div data-was="availability"
+- [ ] license → → p was="availability"
+- [ ] bibl → div was="bibl"
+
 
 _BACKMATTER_
 
@@ -115,38 +122,49 @@ ATT: backmater has to be moved within html body after conversion to html
 - [ ] list → `<ul> data-was="list">`
 	- [ ] item → `<li data-was="item"`
 
- LISTS
-- [x] listPerson → `<ul data-was="listPerson">`
-	- [x] person → `<li data-was="person">`
-		- [x] persName → div data-was="persName"
-			- [x] rolename → p data-was="rolename"
-			- [x] forename → p data-was="forename"
-			- [x] surname → p data-was="surname"
-			- [x] genName →p data-was="genName"
-		- [x] birth → p data-was="birth"
-		- [x] death → p data-was="death"
-		- [x] faith → p data-was="faith"
-		- [x] nationality
-		- [x] occupation → p data-was="occupation"
+ LIST: PERSONS
+- [ ] listPerson → `<ul data-was="listPerson">`
+	- [ ] person → `<li data-was="person">`
+		- [ ] persName → div data-was="persName"
+			- [ ] rolename → p data-was="rolename"
+			- [ ] forename → p data-was="forename"
+			- [ ] surname → p data-was="surname"
+			- [ ] genName →p data-was="genName"
+		- [ ] birth → div data-was="birth"
+		- [ ] death → div data-was="death"
+		- [ ] country → p data-was="country"
+		- [ ] faith → p data-was="faith"
+		- [ ] nationality
+		- [ ] occupation → p data-was="occupation"
 		- [ ] state → div data-was="state"
-		- [x] residence → div data-was="residence"
-		- [x] listPlace → ul data-was="listPlace"
-		- [x] place → li data-was="place"
-			- [x] placeName → p data-was="placeName" (also appears inside `residence` element)
-		- [ ] location data-was="location"
+		- [ ] residence → div data-was="residence"
+		- [ ] settlement → p data-was="settlement"
+
+LIST: PLACES
+- [ ] listPlace → ul data-was="listPlace"
+	- [ ] place → li data-was="place"
+		- [ ] placeName → div data-was="placeName" (also appears inside `residence` element)
+		- [ ] location p pdata-was="location"
 		- [ ] trait → div data-was="trait"
 		- [ ] label → p data-was="label"
-		- [x] desc →  p data-was="desc"
-		- [x] name → p  data-was="name"
+		- [ ] desc →  p data-was="desc"
+		- [ ] name → p  data-was="name"
 
 
-List Relationships
-- [x] listRelation → ul data-was="listRelation" data-type="relationships"
-	- [x] relation → li data-was="relation"
+LIST: OBJECTS
+- [ ] name → p data-was="name"
 
-Interpretation
-- [x] interpGrp → ul data-was="interpGrp"
-- [x] interp → li data-was="interp"
+LIST: RELATIONSHIPS
+
+- listRelation → ul data-was="listRelation" data-type="relationships"
+	- relation → li data-was="relation"
+
+LIST : INTERPRETATION
+- [ ] Interpretation
+- interpGrp → ul data-was="interpGrp"
+- interp → li data-was="interp"
+
+==missing place list==
 
 #### Post pass
 some data-n attributes will be used to create aria labels for instance
@@ -231,11 +249,8 @@ some data-n attributes will be used to create aria labels for instance
 
 
 
-
-
 convert to
 section[@type="chapter"]
-
 Chapter title
 Paragraphs
 Milestones
@@ -252,9 +267,6 @@ as a general rule since we want to retain the information of the initial encodin
 - all tag elements except `p` and `div` tags get converted to the corresponding "conversion tag" see data mapping spreadsheet
 - all their attributes (except xml:id) get converter to a custom `data-*` attribute and retain their attribute value
 
-
-
-    
 --- 
 
 __ΕΔΚ Books__

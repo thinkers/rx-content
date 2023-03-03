@@ -42,7 +42,7 @@
 - tried to delete all instances of paragraph style `STYLE FOR KEFALIDES` including the content, but InDesign crashed again
 - restart macbook
 - created character style `_superscript` with export tag `sup`
-- replace alls instances of superscripts with character style `_superscript`
+- replace all instances of superscripts with character style `_superscript`
 - edited all export tags, moved to new naming subsection scheme
 - test export to HTML
 - re-export without CSS and overrides
